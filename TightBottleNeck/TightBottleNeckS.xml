@@ -1,0 +1,50 @@
+<Experiment version="2">
+	<SpatialQuery test_visibility="false" type="kd-tree"></SpatialQuery>
+	<Common time_step="1"></Common>
+	<GCF agent_force_strength="0.35" agent_interp_width="0.1" max_agent_dist="2" max_agent_force="3" reaction_time="0.5" move_scale="0" slow_width="0" stand_depth="0" sway_change="0"></GCF>
+	<Helbing agent_scale="2000" body_force="1200" friction="2400" obstacle_scale="4000" force_distance="0.015" reaction_time="0.5"></Helbing>
+	<Dummy stddev="0.05"></Dummy>
+	<AgentProfile name="base">
+		<Common pref_speed="1" max_accel="5" max_angle_vel="360" max_neighbors="3" neighbor_dist="5" obstacleSet="1" r="0.5"></Common>
+		<PedVO buffer="0.9" factor="1.57" tau="3" tauObst="1" turningBias="1"></PedVO>
+		<Helbing agent_scale="0" body_force="0" friction="0" obstacle_scale="0" force_distance="0" reaction_time="0"></Helbing>
+		<ORCA tau="20" tauObst="5"></ORCA>
+		<GCF agent_force_strength="0" agent_interp_width="0" max_agent_dist="0" max_agent_force="0" reaction_time="0" move_scale="0.53" slow_width="0.25" stand_depth="0.18" sway_change="0.05"></GCF>
+	</AgentProfile>
+	<AgentProfile name="group_0" inherits="base">
+		<Common pref_speed="1"></Common>
+	</AgentProfile>
+	<AgentProfile name="group_1" inherits="base">
+		<Common class="1" pref_speed="1"></Common>
+	</AgentProfile>
+	<AgentGroup>
+		<ProfileSelector name="group_0" type="const"></ProfileSelector>
+		<StateSelector name="Start_0" type="const"></StateSelector>
+		<Generator anchor_x="-10" anchor_y="-10" count_x="200" count_y="1" offset_x="1" offset_y="0" rotation="0" type="rect_grid"></Generator>
+	</AgentGroup>
+	<AgentGroup>
+		<ProfileSelector name="group_1" type="const"></ProfileSelector>
+		<StateSelector name="Start_1" type="const"></StateSelector>
+		<Generator anchor_x="-10" anchor_y="-10" count_x="200" count_y="1" offset_x="1" offset_y="0" rotation="0" type="rect_grid"></Generator>
+	</AgentGroup>
+	<ObstacleSet type="explicit" class="1">
+		<Obstacle closed="1">
+			<Vertex p_x="0" p_y="100"></Vertex>
+			<Vertex p_x="100" p_y="100"></Vertex>
+			<Vertex p_x="100" p_y="0"></Vertex>
+			<Vertex p_x="0" p_y="0"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="40" p_y="60"></Vertex>
+			<Vertex p_x="59" p_y="60"></Vertex>
+			<Vertex p_x="59" p_y="99"></Vertex>
+			<Vertex p_x="40" p_y="99"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="40" p_y="0"></Vertex>
+			<Vertex p_x="59" p_y="0"></Vertex>
+			<Vertex p_x="59" p_y="58"></Vertex>
+			<Vertex p_x="40" p_y="58"></Vertex>
+		</Obstacle>
+	</ObstacleSet>
+</Experiment>

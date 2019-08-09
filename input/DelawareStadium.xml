@@ -1,0 +1,75 @@
+<Data>
+
+    <!-- Audience -->
+    <Group speed="1" amount="2000">
+        <Spawn min="0" max="100">
+            <Color r="163" g="73" b="164" />
+            <Transition to="0" chance=".01" />
+            <Transition to="1" chance=".01" />
+            <Transition to="2" chance=".98" />
+        </Spawn>
+
+        <!-- Bathroom -->
+        <GoalSet capacity="10000" min="50" max="50">
+            <Color r="63" g="72" b="204" />
+            <Transition to="1" chance=".01" />
+            <Transition to="2" chance=".99" />
+        </GoalSet>
+
+        <!-- Concession -->
+        <GoalSet capacity="10000" min="50" max="50">
+            <Color r="237" g="28" b="36" />
+            <Transition to="0" chance=".01" />
+            <Transition to="2" chance=".99" />
+        </GoalSet>
+
+        <!-- Seats -->
+        <GoalSet capacity="1" min="100" max="100">
+            <Color r="34" g="177" b="76" />
+            <Transition to="0" chance=".01" />
+            <Transition to="1" chance=".01" />
+            <Transition to="2" chance=".98" />
+        </GoalSet>
+
+    </Group>
+
+    <!-- Team 1 -->
+    <Group speed="1" amount="11">
+        <Spawn min="300" max="300">
+            <Color r="0" g="162" b="232" />
+            <Transition to="0" chance="1" />
+        </Spawn>
+
+        <!-- Formation -->
+        <GoalSet capacity="1" min="100" max="100">
+            <Color r="127" g="127" b="127" />
+            <Transition to="1" chance="1" />
+        </GoalSet>
+
+        <!-- End Zone -->
+        <GoalSet capacity="1" min="100" max="100">
+            <Color r="255" g="174" b="201" />
+            <Transition to="0" chance="1" />
+        </GoalSet>
+    </Group>
+
+    <!-- Team 2 -->
+    <Group speed="1" amount="11">
+        <Spawn min="300" max="300">
+            <Color r="185" g="122" b="87" />
+            <Transition to="0" chance="1" />
+        </Spawn>
+
+        <!-- Formation -->
+        <GoalSet capacity="1" min="100" max="100">
+            <Color r="255" g="127" b="39" />
+            <Transition to="1" chance="1" />
+        </GoalSet>
+
+        <!-- End Zone -->
+        <GoalSet capacity="1" min="100" max="100">
+            <Color r="136" g="0" b="21" />
+            <Transition to="0" chance="1" />
+        </GoalSet>
+    </Group>
+</Data>

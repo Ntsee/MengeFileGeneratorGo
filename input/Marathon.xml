@@ -1,0 +1,42 @@
+<Data>
+    <!-- Top Group -->
+    <Group speed="1" amount="1000">
+        <Spawn min="0" max="100">
+            <Color r="163" g="73" b="164" />
+            <Transition to="0" chance=".99" />
+            <Transition to="1" chance=".01" />
+        </Spawn>
+
+        <GoalSet capacity="10000" min="100" max="100">
+            <Color r="185" g="122" b="87" />
+            <Transition to="0" chance=".99" />
+            <Transition to="1" chance=".01" />
+        </GoalSet>
+
+        <GoalSet capacity="10000" min="100" max="100">
+            <Color r="255" g="242" b="0" />
+            <Transition to="0" chance="1" />
+        </GoalSet>
+
+    </Group>
+
+    <!-- Bottom Group -->
+    <Group speed="1" amount="1000">
+        <Spawn min="0" max="100">
+            <Color r="237" g="28" b="36" />
+            <Transition to="0" chance=".99" />
+            <Transition to="1" chance=".01" />
+        </Spawn>
+
+        <GoalSet capacity="10000" min="100" max="100">
+            <Color r="34" g="177" b="76" />
+            <Transition to="0" chance=".99" />
+            <Transition to="1" chance=".01" />
+        </GoalSet>
+        <GoalSet capacity="10000" min="100" max="100">
+            <Color r="63" g="72" b="204" />
+            <Transition to="0" chance="1" />
+        </GoalSet>
+    </Group>
+
+</Data>
