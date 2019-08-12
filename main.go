@@ -25,14 +25,14 @@ type Params struct {
 var behaviorFlag = flag.String("behavior", "", "specifies the path to the Behavior PNG file")
 var wallFlag = flag.String("wall", "", "specifies the path to the Wall PNG file")
 var outputFlag = flag.String("output", "", "specifies the path to the output directory")
-var viewFlag = flag.Bool("view", true, "specifies if menge should run the visualizer")
+var viewFlag = flag.Bool("view", false, "specifies if menge should run the visualizer")
 
 func init() {
 
 	flag.StringVar(behaviorFlag, "b", "", "specifies the path to the Behavior PNG file")
 	flag.StringVar(wallFlag, "w", "", "specifies the path to the Wall PNG file")
 	flag.StringVar(outputFlag, "o", "", "specifies the path to the output directory")
-	flag.BoolVar(viewFlag, "v", true, "specifies if menge should run the visualizer")
+	flag.BoolVar(viewFlag, "v", false, "specifies if menge should run the visualizer")
 }
 
 func main() {
@@ -80,18 +80,6 @@ func main() {
 		fmt.Println(err)
 		return
 	}
-
-	// Test
-	for i := range walkableRegions.SquareList {
-		square := walkableRegions.SquareList[i]
-		fmt.Printf("Square ID: %d\nTop Left: (%d, %d) Bottom Right: (%d, %d)\n", square.Id_num, square.X1, square.Y1, square.X2, square.Y2)
-		for j := range square.Routers {
-			router := square.Routers[j]
-			fmt.Printf("- Router: (%d, %d)\n", router.X, router.Y)
-		}
-		fmt.Println()
-	}
-	// End Test
 
 	colorDictionary, err := ReadColorDictionary(scenarioParams)
 	if err != nil {
@@ -141,10 +129,12 @@ func main() {
 		return
 	}
 
-	err = WriteViewXML(viewerXML, fmt.Sprintf("%s/%sV.xml", scenarioParams.OutputDirectory, scenarioParams.Name))
-	if err != nil {
-		fmt.Println(err)
-		return
+	if scenarioParams.HasView {
+		err = WriteViewXML(viewerXML, fmt.Sprintf("%s/%sV.xml", scenarioParams.OutputDirectory, scenarioParams.Name))
+		if err != nil {
+			fmt.Println(err)
+			return
+		}
 	}
 
 	projectXML := CreateProjectXML(scenarioParams)
