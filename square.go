@@ -171,6 +171,9 @@ func Rebuild(sq_list []RoutingSquare, r *RegionParams) {
 			new_square := sq_list[z]
 
 			if new_square.X1 >= square.X1 && new_square.X2 <= square.X2 {
+
+				// Contained Case 1: Square is on top of new square
+				// New square width is smaller than or equal to square width
 				if new_square.Y1 == square.Y2+1 {
 					r.BorderDict[y] = append(r.BorderDict[y], z)
 					r.BorderDict[z] = append(r.BorderDict[z], y)
@@ -179,6 +182,9 @@ func Rebuild(sq_list []RoutingSquare, r *RegionParams) {
 						r.SquareList[z].Routers = append(r.SquareList[z].Routers, Tuple {int(cx), new_square.Y1})
 						r.SquareList[y].Routers = append(r.SquareList[y].Routers, Tuple{ int(cx), square.Y2})
 					}
+
+				// Contained Case 2: New square is on top of square
+				// New square width is smaller than or equal to square width
 				} else if new_square.Y2 == square.Y1-1 {
 					r.BorderDict[y] = append(r.BorderDict[y], z)
 					r.BorderDict[z] = append(r.BorderDict[z], y)
@@ -190,6 +196,9 @@ func Rebuild(sq_list []RoutingSquare, r *RegionParams) {
 				}
 
 			} else if new_square.Y1 >= square.Y1 && new_square.Y2 <= square.Y2 {
+
+				// Contained Case 3: Square is to the left of new square
+				// New square height can be smaller than or equal to square height
 				if new_square.X1 == square.X2+1 {
 					r.BorderDict[y] = append(r.BorderDict[y], z)
 					r.BorderDict[z] = append(r.BorderDict[z], y)
@@ -199,6 +208,8 @@ func Rebuild(sq_list []RoutingSquare, r *RegionParams) {
 						r.SquareList[y].Routers = append(r.SquareList[y].Routers, Tuple{ square.X2, int(cy)})
 					}
 
+				// Contained Case 4: New square is to the left of square
+				// New square height is smaller than or equal to square height
 				} else if new_square.X2 == square.X1-1 {
 					r.BorderDict[y] = append(r.BorderDict[y], z)
 					r.BorderDict[z] = append(r.BorderDict[z], y)
@@ -208,18 +219,23 @@ func Rebuild(sq_list []RoutingSquare, r *RegionParams) {
 						r.SquareList[y].Routers = append(r.SquareList[y].Routers, Tuple{ square.X1, int(cy)})
 					}
 				}
-			}
-			// ?
-			if square.X1 >= new_square.X1 && square.X2 <= new_square.X2 {
+
+			} else if square.X1 >= new_square.X1 && square.X2 <= new_square.X2 {
+
+				// Contained Case 5: New square is on top of square
+				// Square width is smaller than or equal to new square width
 				if square.Y1 == new_square.Y2+1 {
 					r.BorderDict[y] = append(r.BorderDict[y], z)
 					r.BorderDict[z] = append(r.BorderDict[z], y)
 					for i:=0; i<=MIDPOINT_DIVISOR; i++ {
 						cx := float64(square.X2 - square.X1) * (float64(i) / float64(MIDPOINT_DIVISOR)) + float64(square.X1)
-						r.SquareList[z].Routers = append(r.SquareList[z].Routers, Tuple {int(cx), square.Y1})
-						r.SquareList[y].Routers = append(r.SquareList[y].Routers, Tuple{int(cx), new_square.Y2})
+						r.SquareList[z].Routers = append(r.SquareList[z].Routers, Tuple {int(cx), new_square.Y2})
+						r.SquareList[y].Routers = append(r.SquareList[y].Routers, Tuple{int(cx), square.Y1})
 					}
 
+
+				// Contained Case 6: Square is on top of new square
+				// Square width is smaller than or equal to new square width
 				} else if square.Y2 == new_square.Y1-1 {
 					r.BorderDict[y] = append(r.BorderDict[y], z)
 					r.BorderDict[z] = append(r.BorderDict[z], y)
@@ -230,17 +246,21 @@ func Rebuild(sq_list []RoutingSquare, r *RegionParams) {
 					}
 				}
 
-
 			} else if square.Y1 >= new_square.Y1 && square.Y2 <= new_square.Y2 {
+
+				// Contained Case 7: New square is to the left of square
+				// Square height is smaller than or equal to new square height
 				if square.X1 == new_square.X2+1 {
 					r.BorderDict[y] = append(r.BorderDict[y], z)
 					r.BorderDict[z] = append(r.BorderDict[z], y)
 					for i:=0; i<=MIDPOINT_DIVISOR; i++ {
 						cy := float64(square.Y2 - square.Y1) * (float64(i) / float64(MIDPOINT_DIVISOR)) + float64(square.Y1)
-						r.SquareList[z].Routers = append(r.SquareList[z].Routers, Tuple {square.X1, int(cy)})
-						r.SquareList[y].Routers = append(r.SquareList[y].Routers, Tuple{new_square.X2, int(cy)})
+						r.SquareList[z].Routers = append(r.SquareList[z].Routers, Tuple {new_square.X2, int(cy)})
+						r.SquareList[y].Routers = append(r.SquareList[y].Routers, Tuple{square.X1, int(cy)})
 					}
 
+				// Contained Case 8: Square is to the left of new square
+				// Square height is smaller than or equal to new square height
 				} else if square.X2 == new_square.X1-1 {
 					r.BorderDict[y] = append(r.BorderDict[y], z)
 					r.BorderDict[z] = append(r.BorderDict[z], y)
@@ -250,9 +270,9 @@ func Rebuild(sq_list []RoutingSquare, r *RegionParams) {
 						r.SquareList[y].Routers = append(r.SquareList[y].Routers, Tuple{square.X2, int(cy)})
 					}
 				}
-			}
 
-			if new_square.Y2 == square.Y1 - 1 {
+			} else if new_square.Y2 == square.Y1 - 1 {
+
 				//Hanging Case 1
 				// next_square is on the top of square
 				// right side of next_square extends pass right side of square
@@ -264,12 +284,11 @@ func Rebuild(sq_list []RoutingSquare, r *RegionParams) {
 						r.SquareList[y].Routers = append(r.SquareList[y].Routers, Tuple {int(cx), square.Y1})
 						r.SquareList[z].Routers = append(r.SquareList[z].Routers, Tuple{int(cx), new_square.Y2})
 					}
-				}
 
 				// Hanging Case 2
 				// next_square is on the top of square
 				// left side of next square extends pass the left side of square
-				if square.X1 >= new_square.X1 && square.X2 > new_square.X2 && square.X1 < new_square.X2 {
+				} else if square.X1 >= new_square.X1 && square.X2 > new_square.X2 && square.X1 < new_square.X2 {
 					r.BorderDict[y] = append(r.BorderDict[y], z)
 					r.BorderDict[z] = append(r.BorderDict[z], y)
 					for i:=0; i<=MIDPOINT_DIVISOR; i++ {
@@ -278,9 +297,9 @@ func Rebuild(sq_list []RoutingSquare, r *RegionParams) {
 						r.SquareList[z].Routers = append(r.SquareList[z].Routers, Tuple{int(cx), new_square.Y2})
 					}
 				}
-			}
 
-			if square.Y2 == new_square.Y1 - 1 {
+			} else if square.Y2 == new_square.Y1 - 1 {
+
 				// Hanging Case 3
 				// square is on top of next_square
 				// right side of square extends pass right side of next_square
@@ -292,12 +311,11 @@ func Rebuild(sq_list []RoutingSquare, r *RegionParams) {
 						r.SquareList[y].Routers = append(r.SquareList[y].Routers, Tuple {int(cx), square.Y2})
 						r.SquareList[z].Routers = append(r.SquareList[z].Routers, Tuple{int(cx), new_square.Y1})
 					}
-				}
 
 				// Hanging Case 4
 				// square is on top of next_square
 				// left side of square extends pass the left side of next_square
-				if new_square.X1 >= square.X1 && new_square.X2 > square.X2 && new_square.X1 < square.X2 {
+				} else if new_square.X1 >= square.X1 && new_square.X2 > square.X2 && new_square.X1 < square.X2 {
 					r.BorderDict[y] = append(r.BorderDict[y], z)
 					r.BorderDict[z] = append(r.BorderDict[z], y)
 					for i:=0; i<=MIDPOINT_DIVISOR; i++ {
@@ -306,9 +324,8 @@ func Rebuild(sq_list []RoutingSquare, r *RegionParams) {
 						r.SquareList[z].Routers = append(r.SquareList[z].Routers, Tuple{int(cx), new_square.Y1})
 					}
 				}
-			}
 
-			if new_square.X2 == square.X1 - 1 {
+			} else if new_square.X2 == square.X1 - 1 {
 				// Hanging Case 5
 				// next_square is to the left of square
 				// bottom side of square extends pass the bottom side of next square
@@ -320,12 +337,11 @@ func Rebuild(sq_list []RoutingSquare, r *RegionParams) {
 						r.SquareList[y].Routers = append(r.SquareList[y].Routers, Tuple {square.X1, int(cy)})
 						r.SquareList[z].Routers = append(r.SquareList[z].Routers, Tuple{new_square.X2, int(cy)})
 					}
-				}
 
 				// Hanging Case 6
 				// next_square is to the left of square
 				// top side of square extends pass the top side of next_square
-				if square.Y1 <= new_square.Y1 && square.Y2 < new_square.Y2 && square.Y2 > new_square.Y1 {
+				} else if square.Y1 <= new_square.Y1 && square.Y2 < new_square.Y2 && square.Y2 > new_square.Y1 {
 					r.BorderDict[y] = append(r.BorderDict[y], z)
 					r.BorderDict[z] = append(r.BorderDict[z], y)
 					for i:=0; i<=MIDPOINT_DIVISOR; i++ {
@@ -334,9 +350,8 @@ func Rebuild(sq_list []RoutingSquare, r *RegionParams) {
 						r.SquareList[z].Routers = append(r.SquareList[z].Routers, Tuple{new_square.X2, int(cy)})
 					}
 				}
-			}
 
-			if square.X2 == new_square.X1 - 1 {
+			} else if square.X2 == new_square.X1 - 1 {
 				// Hanging Case 7
 				// square is to the left of next_square
 				// bottom side of square extends pass bottom side of next_square
@@ -348,12 +363,11 @@ func Rebuild(sq_list []RoutingSquare, r *RegionParams) {
 						r.SquareList[y].Routers = append(r.SquareList[y].Routers, Tuple {square.X1, int(cy)})
 						r.SquareList[z].Routers = append(r.SquareList[z].Routers, Tuple{new_square.X2, int(cy)})
 					}
-				}
 
 				// Hanging Case 8
 				// square is to the left of next_square
 				// top side of square extends pass top side of next_square
-				if square.Y1 <= new_square.Y1 && square.Y2 < new_square.Y2 && square.Y2 > new_square.Y1 {
+				} else if square.Y1 <= new_square.Y1 && square.Y2 < new_square.Y2 && square.Y2 > new_square.Y1 {
 					r.BorderDict[y] = append(r.BorderDict[y], z)
 					r.BorderDict[z] = append(r.BorderDict[z], y)
 					for i:=0; i<=MIDPOINT_DIVISOR; i++ {

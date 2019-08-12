@@ -4,6 +4,7 @@ import (
 	"encoding/xml"
 	"fmt"
 	"io/ioutil"
+	"math"
 	"os"
 	"strings"
 )
@@ -140,7 +141,7 @@ func createGoalSets(params *Params, behaviorXML *BehaviorXML, scenarioXML Scenar
 					Radius: 0.5,
 					Capacity: goalSet.Capacity,
 					X: colorDictionary[goalColor][goalID].X,
-					Y: params.Height - colorDictionary[goalColor][goalID].Y,
+					Y: int(math.Max(0, float64(params.Height - colorDictionary[goalColor][goalID].Y - 1))),
 				})
 			}
 			behaviorXML.GoalSets = append(behaviorXML.GoalSets, bGoalSet)

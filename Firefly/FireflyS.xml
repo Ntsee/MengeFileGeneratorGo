@@ -1,0 +1,1050 @@
+<Experiment version="2">
+	<SpatialQuery test_visibility="false" type="kd-tree"></SpatialQuery>
+	<Common time_step="1"></Common>
+	<GCF agent_force_strength="0.35" agent_interp_width="0.1" max_agent_dist="2" max_agent_force="3" reaction_time="0.5" move_scale="0" slow_width="0" stand_depth="0" sway_change="0"></GCF>
+	<Helbing agent_scale="2000" body_force="1200" friction="2400" obstacle_scale="4000" force_distance="0.015" reaction_time="0.5"></Helbing>
+	<Dummy stddev="0.05"></Dummy>
+	<AgentProfile name="base">
+		<Common pref_speed="1" max_accel="5" max_angle_vel="360" max_neighbors="3" neighbor_dist="5" obstacleSet="1" r="0.5"></Common>
+		<PedVO buffer="0.9" factor="1.57" tau="3" tauObst="1" turningBias="1"></PedVO>
+		<Helbing agent_scale="0" body_force="0" friction="0" obstacle_scale="0" force_distance="0" reaction_time="0"></Helbing>
+		<ORCA tau="20" tauObst="5"></ORCA>
+		<GCF agent_force_strength="0" agent_interp_width="0" max_agent_dist="0" max_agent_force="0" reaction_time="0" move_scale="0.53" slow_width="0.25" stand_depth="0.18" sway_change="0.05"></GCF>
+	</AgentProfile>
+	<AgentProfile name="group_0" inherits="base">
+		<Common pref_speed="1"></Common>
+	</AgentProfile>
+	<AgentGroup>
+		<ProfileSelector name="group_0" type="const"></ProfileSelector>
+		<StateSelector name="Start_0" type="const"></StateSelector>
+		<Generator anchor_x="-10" anchor_y="-10" count_x="1000" count_y="1" offset_x="1" offset_y="0" rotation="0" type="rect_grid"></Generator>
+	</AgentGroup>
+	<ObstacleSet type="explicit" class="1">
+		<Obstacle closed="1">
+			<Vertex p_x="-1" p_y="1866"></Vertex>
+			<Vertex p_x="1439" p_y="1866"></Vertex>
+			<Vertex p_x="1439" p_y="-1"></Vertex>
+			<Vertex p_x="-1" p_y="-1"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1099" p_y="1765"></Vertex>
+			<Vertex p_x="1120" p_y="1765"></Vertex>
+			<Vertex p_x="1120" p_y="1801"></Vertex>
+			<Vertex p_x="1099" p_y="1801"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1044" p_y="1727"></Vertex>
+			<Vertex p_x="1056" p_y="1727"></Vertex>
+			<Vertex p_x="1056" p_y="1773"></Vertex>
+			<Vertex p_x="1044" p_y="1773"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1112" p_y="1743"></Vertex>
+			<Vertex p_x="1120" p_y="1743"></Vertex>
+			<Vertex p_x="1120" p_y="1764"></Vertex>
+			<Vertex p_x="1112" p_y="1764"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1138" p_y="1728"></Vertex>
+			<Vertex p_x="1157" p_y="1728"></Vertex>
+			<Vertex p_x="1157" p_y="1755"></Vertex>
+			<Vertex p_x="1138" p_y="1755"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1044" p_y="1713"></Vertex>
+			<Vertex p_x="1045" p_y="1713"></Vertex>
+			<Vertex p_x="1045" p_y="1726"></Vertex>
+			<Vertex p_x="1044" p_y="1726"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="787" p_y="1639"></Vertex>
+			<Vertex p_x="828" p_y="1639"></Vertex>
+			<Vertex p_x="828" p_y="1701"></Vertex>
+			<Vertex p_x="787" p_y="1701"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="688" p_y="1675"></Vertex>
+			<Vertex p_x="722" p_y="1675"></Vertex>
+			<Vertex p_x="722" p_y="1695"></Vertex>
+			<Vertex p_x="688" p_y="1695"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="745" p_y="1624"></Vertex>
+			<Vertex p_x="786" p_y="1624"></Vertex>
+			<Vertex p_x="786" p_y="1682"></Vertex>
+			<Vertex p_x="745" p_y="1682"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="895" p_y="1641"></Vertex>
+			<Vertex p_x="925" p_y="1641"></Vertex>
+			<Vertex p_x="925" p_y="1672"></Vertex>
+			<Vertex p_x="895" p_y="1672"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="723" p_y="1611"></Vertex>
+			<Vertex p_x="744" p_y="1611"></Vertex>
+			<Vertex p_x="744" p_y="1661"></Vertex>
+			<Vertex p_x="723" p_y="1661"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="926" p_y="1623"></Vertex>
+			<Vertex p_x="958" p_y="1623"></Vertex>
+			<Vertex p_x="958" p_y="1659"></Vertex>
+			<Vertex p_x="926" p_y="1659"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="977" p_y="1630"></Vertex>
+			<Vertex p_x="999" p_y="1630"></Vertex>
+			<Vertex p_x="999" p_y="1651"></Vertex>
+			<Vertex p_x="977" p_y="1651"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1391" p_y="1424"></Vertex>
+			<Vertex p_x="1438" p_y="1424"></Vertex>
+			<Vertex p_x="1438" p_y="1648"></Vertex>
+			<Vertex p_x="1391" p_y="1648"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="924" p_y="1623"></Vertex>
+			<Vertex p_x="925" p_y="1623"></Vertex>
+			<Vertex p_x="925" p_y="1640"></Vertex>
+			<Vertex p_x="924" p_y="1640"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1096" p_y="1592"></Vertex>
+			<Vertex p_x="1146" p_y="1592"></Vertex>
+			<Vertex p_x="1146" p_y="1639"></Vertex>
+			<Vertex p_x="1096" p_y="1639"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="787" p_y="1624"></Vertex>
+			<Vertex p_x="807" p_y="1624"></Vertex>
+			<Vertex p_x="807" p_y="1638"></Vertex>
+			<Vertex p_x="787" p_y="1638"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="745" p_y="1611"></Vertex>
+			<Vertex p_x="766" p_y="1611"></Vertex>
+			<Vertex p_x="766" p_y="1623"></Vertex>
+			<Vertex p_x="745" p_y="1623"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1181" p_y="1452"></Vertex>
+			<Vertex p_x="1211" p_y="1452"></Vertex>
+			<Vertex p_x="1211" p_y="1587"></Vertex>
+			<Vertex p_x="1181" p_y="1587"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="709" p_y="1538"></Vertex>
+			<Vertex p_x="734" p_y="1538"></Vertex>
+			<Vertex p_x="734" p_y="1575"></Vertex>
+			<Vertex p_x="709" p_y="1575"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1066" p_y="1537"></Vertex>
+			<Vertex p_x="1067" p_y="1537"></Vertex>
+			<Vertex p_x="1067" p_y="1562"></Vertex>
+			<Vertex p_x="1066" p_y="1562"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="758" p_y="1445"></Vertex>
+			<Vertex p_x="780" p_y="1445"></Vertex>
+			<Vertex p_x="780" p_y="1465"></Vertex>
+			<Vertex p_x="758" p_y="1465"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1295" p_y="1424"></Vertex>
+			<Vertex p_x="1390" p_y="1424"></Vertex>
+			<Vertex p_x="1390" p_y="1451"></Vertex>
+			<Vertex p_x="1295" p_y="1451"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="779" p_y="1392"></Vertex>
+			<Vertex p_x="807" p_y="1392"></Vertex>
+			<Vertex p_x="807" p_y="1408"></Vertex>
+			<Vertex p_x="779" p_y="1408"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1190" p_y="1289"></Vertex>
+			<Vertex p_x="1227" p_y="1289"></Vertex>
+			<Vertex p_x="1227" p_y="1393"></Vertex>
+			<Vertex p_x="1190" p_y="1393"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1356" p_y="1354"></Vertex>
+			<Vertex p_x="1373" p_y="1354"></Vertex>
+			<Vertex p_x="1373" p_y="1372"></Vertex>
+			<Vertex p_x="1356" p_y="1372"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1400" p_y="1323"></Vertex>
+			<Vertex p_x="1413" p_y="1323"></Vertex>
+			<Vertex p_x="1413" p_y="1361"></Vertex>
+			<Vertex p_x="1400" p_y="1361"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1375" p_y="1306"></Vertex>
+			<Vertex p_x="1399" p_y="1306"></Vertex>
+			<Vertex p_x="1399" p_y="1337"></Vertex>
+			<Vertex p_x="1375" p_y="1337"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1400" p_y="1306"></Vertex>
+			<Vertex p_x="1402" p_y="1306"></Vertex>
+			<Vertex p_x="1402" p_y="1322"></Vertex>
+			<Vertex p_x="1400" p_y="1322"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1315" p_y="1231"></Vertex>
+			<Vertex p_x="1342" p_y="1231"></Vertex>
+			<Vertex p_x="1342" p_y="1261"></Vertex>
+			<Vertex p_x="1315" p_y="1261"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="816" p_y="1225"></Vertex>
+			<Vertex p_x="848" p_y="1225"></Vertex>
+			<Vertex p_x="848" p_y="1259"></Vertex>
+			<Vertex p_x="816" p_y="1259"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="831" p_y="1183"></Vertex>
+			<Vertex p_x="848" p_y="1183"></Vertex>
+			<Vertex p_x="848" p_y="1224"></Vertex>
+			<Vertex p_x="831" p_y="1224"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="635" p_y="430"></Vertex>
+			<Vertex p_x="644" p_y="430"></Vertex>
+			<Vertex p_x="644" p_y="1196"></Vertex>
+			<Vertex p_x="635" p_y="1196"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="846" p_y="1147"></Vertex>
+			<Vertex p_x="848" p_y="1147"></Vertex>
+			<Vertex p_x="848" p_y="1182"></Vertex>
+			<Vertex p_x="846" p_y="1182"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="692" p_y="1114"></Vertex>
+			<Vertex p_x="722" p_y="1114"></Vertex>
+			<Vertex p_x="722" p_y="1180"></Vertex>
+			<Vertex p_x="692" p_y="1180"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="771" p_y="1162"></Vertex>
+			<Vertex p_x="789" p_y="1162"></Vertex>
+			<Vertex p_x="789" p_y="1180"></Vertex>
+			<Vertex p_x="771" p_y="1180"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="741" p_y="1132"></Vertex>
+			<Vertex p_x="760" p_y="1132"></Vertex>
+			<Vertex p_x="760" p_y="1166"></Vertex>
+			<Vertex p_x="741" p_y="1166"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="781" p_y="1139"></Vertex>
+			<Vertex p_x="794" p_y="1139"></Vertex>
+			<Vertex p_x="794" p_y="1154"></Vertex>
+			<Vertex p_x="781" p_y="1154"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="734" p_y="1079"></Vertex>
+			<Vertex p_x="754" p_y="1079"></Vertex>
+			<Vertex p_x="754" p_y="1112"></Vertex>
+			<Vertex p_x="734" p_y="1112"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="645" p_y="879"></Vertex>
+			<Vertex p_x="701" p_y="879"></Vertex>
+			<Vertex p_x="701" p_y="1102"></Vertex>
+			<Vertex p_x="645" p_y="1102"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1312" p_y="1017"></Vertex>
+			<Vertex p_x="1357" p_y="1017"></Vertex>
+			<Vertex p_x="1357" p_y="1058"></Vertex>
+			<Vertex p_x="1312" p_y="1058"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="702" p_y="954"></Vertex>
+			<Vertex p_x="750" p_y="954"></Vertex>
+			<Vertex p_x="750" p_y="1052"></Vertex>
+			<Vertex p_x="702" p_y="1052"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1358" p_y="1017"></Vertex>
+			<Vertex p_x="1369" p_y="1017"></Vertex>
+			<Vertex p_x="1369" p_y="1032"></Vertex>
+			<Vertex p_x="1358" p_y="1032"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="762" p_y="989"></Vertex>
+			<Vertex p_x="782" p_y="989"></Vertex>
+			<Vertex p_x="782" p_y="1028"></Vertex>
+			<Vertex p_x="762" p_y="1028"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="702" p_y="879"></Vertex>
+			<Vertex p_x="704" p_y="879"></Vertex>
+			<Vertex p_x="704" p_y="953"></Vertex>
+			<Vertex p_x="702" p_y="953"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="896" p_y="606"></Vertex>
+			<Vertex p_x="1119" p_y="606"></Vertex>
+			<Vertex p_x="1119" p_y="880"></Vertex>
+			<Vertex p_x="896" p_y="880"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="645" p_y="430"></Vertex>
+			<Vertex p_x="652" p_y="430"></Vertex>
+			<Vertex p_x="652" p_y="878"></Vertex>
+			<Vertex p_x="645" p_y="878"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="762" p_y="855"></Vertex>
+			<Vertex p_x="781" p_y="855"></Vertex>
+			<Vertex p_x="781" p_y="860"></Vertex>
+			<Vertex p_x="762" p_y="860"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="838" p_y="780"></Vertex>
+			<Vertex p_x="872" p_y="780"></Vertex>
+			<Vertex p_x="872" p_y="833"></Vertex>
+			<Vertex p_x="838" p_y="833"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="849" p_y="606"></Vertex>
+			<Vertex p_x="895" p_y="606"></Vertex>
+			<Vertex p_x="895" p_y="736"></Vertex>
+			<Vertex p_x="849" p_y="736"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="783" p_y="683"></Vertex>
+			<Vertex p_x="805" p_y="683"></Vertex>
+			<Vertex p_x="805" p_y="726"></Vertex>
+			<Vertex p_x="783" p_y="726"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="382" p_y="381"></Vertex>
+			<Vertex p_x="464" p_y="381"></Vertex>
+			<Vertex p_x="464" p_y="722"></Vertex>
+			<Vertex p_x="382" p_y="722"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="168" p_y="634"></Vertex>
+			<Vertex p_x="253" p_y="634"></Vertex>
+			<Vertex p_x="253" p_y="696"></Vertex>
+			<Vertex p_x="168" p_y="696"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="175" p_y="612"></Vertex>
+			<Vertex p_x="208" p_y="612"></Vertex>
+			<Vertex p_x="208" p_y="633"></Vertex>
+			<Vertex p_x="175" p_y="633"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="813" p_y="591"></Vertex>
+			<Vertex p_x="848" p_y="591"></Vertex>
+			<Vertex p_x="848" p_y="623"></Vertex>
+			<Vertex p_x="813" p_y="623"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="198" p_y="560"></Vertex>
+			<Vertex p_x="227" p_y="560"></Vertex>
+			<Vertex p_x="227" p_y="595"></Vertex>
+			<Vertex p_x="198" p_y="595"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="883" p_y="566"></Vertex>
+			<Vertex p_x="907" p_y="566"></Vertex>
+			<Vertex p_x="907" p_y="588"></Vertex>
+			<Vertex p_x="883" p_y="588"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="653" p_y="480"></Vertex>
+			<Vertex p_x="693" p_y="480"></Vertex>
+			<Vertex p_x="693" p_y="558"></Vertex>
+			<Vertex p_x="653" p_y="558"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="216" p_y="390"></Vertex>
+			<Vertex p_x="233" p_y="390"></Vertex>
+			<Vertex p_x="233" p_y="543"></Vertex>
+			<Vertex p_x="216" p_y="543"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="134" p_y="355"></Vertex>
+			<Vertex p_x="142" p_y="355"></Vertex>
+			<Vertex p_x="142" p_y="512"></Vertex>
+			<Vertex p_x="134" p_y="512"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="962" p_y="481"></Vertex>
+			<Vertex p_x="984" p_y="481"></Vertex>
+			<Vertex p_x="984" p_y="499"></Vertex>
+			<Vertex p_x="962" p_y="499"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="180" p_y="452"></Vertex>
+			<Vertex p_x="215" p_y="452"></Vertex>
+			<Vertex p_x="215" p_y="497"></Vertex>
+			<Vertex p_x="180" p_y="497"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="653" p_y="430"></Vertex>
+			<Vertex p_x="659" p_y="430"></Vertex>
+			<Vertex p_x="659" p_y="479"></Vertex>
+			<Vertex p_x="653" p_y="479"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="985" p_y="365"></Vertex>
+			<Vertex p_x="1012" p_y="365"></Vertex>
+			<Vertex p_x="1012" p_y="473"></Vertex>
+			<Vertex p_x="985" p_y="473"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="331" p_y="381"></Vertex>
+			<Vertex p_x="381" p_y="381"></Vertex>
+			<Vertex p_x="381" p_y="458"></Vertex>
+			<Vertex p_x="331" p_y="458"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="143" p_y="355"></Vertex>
+			<Vertex p_x="177" p_y="355"></Vertex>
+			<Vertex p_x="177" p_y="436"></Vertex>
+			<Vertex p_x="143" p_y="436"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="628" p_y="185"></Vertex>
+			<Vertex p_x="669" p_y="185"></Vertex>
+			<Vertex p_x="669" p_y="406"></Vertex>
+			<Vertex p_x="628" p_y="406"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="208" p_y="326"></Vertex>
+			<Vertex p_x="232" p_y="326"></Vertex>
+			<Vertex p_x="232" p_y="372"></Vertex>
+			<Vertex p_x="208" p_y="372"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="545" p_y="254"></Vertex>
+			<Vertex p_x="627" p_y="254"></Vertex>
+			<Vertex p_x="627" p_y="362"></Vertex>
+			<Vertex p_x="545" p_y="362"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="134" p_y="307"></Vertex>
+			<Vertex p_x="135" p_y="307"></Vertex>
+			<Vertex p_x="135" p_y="354"></Vertex>
+			<Vertex p_x="134" p_y="354"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="487" p_y="248"></Vertex>
+			<Vertex p_x="509" p_y="248"></Vertex>
+			<Vertex p_x="509" p_y="326"></Vertex>
+			<Vertex p_x="487" p_y="326"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="196" p_y="283"></Vertex>
+			<Vertex p_x="228" p_y="283"></Vertex>
+			<Vertex p_x="228" p_y="302"></Vertex>
+			<Vertex p_x="196" p_y="302"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="114" p_y="225"></Vertex>
+			<Vertex p_x="147" p_y="225"></Vertex>
+			<Vertex p_x="147" p_y="278"></Vertex>
+			<Vertex p_x="114" p_y="278"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="670" p_y="89"></Vertex>
+			<Vertex p_x="707" p_y="89"></Vertex>
+			<Vertex p_x="707" p_y="263"></Vertex>
+			<Vertex p_x="670" p_y="263"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="597" p_y="185"></Vertex>
+			<Vertex p_x="627" p_y="185"></Vertex>
+			<Vertex p_x="627" p_y="253"></Vertex>
+			<Vertex p_x="597" p_y="253"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1096" p_y="206"></Vertex>
+			<Vertex p_x="1128" p_y="206"></Vertex>
+			<Vertex p_x="1128" p_y="236"></Vertex>
+			<Vertex p_x="1096" p_y="236"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1170" p_y="62"></Vertex>
+			<Vertex p_x="1216" p_y="62"></Vertex>
+			<Vertex p_x="1216" p_y="236"></Vertex>
+			<Vertex p_x="1170" p_y="236"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="151" p_y="164"></Vertex>
+			<Vertex p_x="188" p_y="164"></Vertex>
+			<Vertex p_x="188" p_y="212"></Vertex>
+			<Vertex p_x="151" p_y="212"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="554" p_y="128"></Vertex>
+			<Vertex p_x="580" p_y="128"></Vertex>
+			<Vertex p_x="580" p_y="201"></Vertex>
+			<Vertex p_x="554" p_y="201"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="647" p_y="89"></Vertex>
+			<Vertex p_x="669" p_y="89"></Vertex>
+			<Vertex p_x="669" p_y="184"></Vertex>
+			<Vertex p_x="647" p_y="184"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="723" p_y="100"></Vertex>
+			<Vertex p_x="751" p_y="100"></Vertex>
+			<Vertex p_x="751" p_y="134"></Vertex>
+			<Vertex p_x="723" p_y="134"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="0" p_y="41"></Vertex>
+			<Vertex p_x="22" p_y="41"></Vertex>
+			<Vertex p_x="22" p_y="80"></Vertex>
+			<Vertex p_x="0" p_y="80"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="645" p_y="0"></Vertex>
+			<Vertex p_x="830" p_y="0"></Vertex>
+			<Vertex p_x="830" p_y="65"></Vertex>
+			<Vertex p_x="645" p_y="65"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="161" p_y="25"></Vertex>
+			<Vertex p_x="333" p_y="25"></Vertex>
+			<Vertex p_x="333" p_y="48"></Vertex>
+			<Vertex p_x="161" p_y="48"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="66" p_y="0"></Vertex>
+			<Vertex p_x="109" p_y="0"></Vertex>
+			<Vertex p_x="109" p_y="34"></Vertex>
+			<Vertex p_x="66" p_y="34"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1058" p_y="1848"></Vertex>
+			<Vertex p_x="1111" p_y="1848"></Vertex>
+			<Vertex p_x="1111" p_y="1865"></Vertex>
+			<Vertex p_x="1058" p_y="1865"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1044" p_y="1833"></Vertex>
+			<Vertex p_x="1057" p_y="1833"></Vertex>
+			<Vertex p_x="1057" p_y="1865"></Vertex>
+			<Vertex p_x="1044" p_y="1865"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="753" p_y="1753"></Vertex>
+			<Vertex p_x="829" p_y="1753"></Vertex>
+			<Vertex p_x="829" p_y="1865"></Vertex>
+			<Vertex p_x="753" p_y="1865"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1125" p_y="1728"></Vertex>
+			<Vertex p_x="1137" p_y="1728"></Vertex>
+			<Vertex p_x="1137" p_y="1783"></Vertex>
+			<Vertex p_x="1125" p_y="1783"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1121" p_y="1743"></Vertex>
+			<Vertex p_x="1124" p_y="1743"></Vertex>
+			<Vertex p_x="1124" p_y="1783"></Vertex>
+			<Vertex p_x="1121" p_y="1783"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="830" p_y="1738"></Vertex>
+			<Vertex p_x="878" p_y="1738"></Vertex>
+			<Vertex p_x="878" p_y="1865"></Vertex>
+			<Vertex p_x="830" p_y="1865"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="879" p_y="1717"></Vertex>
+			<Vertex p_x="902" p_y="1717"></Vertex>
+			<Vertex p_x="902" p_y="1865"></Vertex>
+			<Vertex p_x="879" p_y="1865"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1040" p_y="1713"></Vertex>
+			<Vertex p_x="1043" p_y="1713"></Vertex>
+			<Vertex p_x="1043" p_y="1865"></Vertex>
+			<Vertex p_x="1040" p_y="1865"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="903" p_y="1705"></Vertex>
+			<Vertex p_x="916" p_y="1705"></Vertex>
+			<Vertex p_x="916" p_y="1865"></Vertex>
+			<Vertex p_x="903" p_y="1865"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="723" p_y="1700"></Vertex>
+			<Vertex p_x="752" p_y="1700"></Vertex>
+			<Vertex p_x="752" p_y="1865"></Vertex>
+			<Vertex p_x="723" p_y="1865"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="650" p_y="1696"></Vertex>
+			<Vertex p_x="722" p_y="1696"></Vertex>
+			<Vertex p_x="722" p_y="1865"></Vertex>
+			<Vertex p_x="650" p_y="1865"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1016" p_y="1694"></Vertex>
+			<Vertex p_x="1039" p_y="1694"></Vertex>
+			<Vertex p_x="1039" p_y="1865"></Vertex>
+			<Vertex p_x="1016" p_y="1865"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="917" p_y="1691"></Vertex>
+			<Vertex p_x="933" p_y="1691"></Vertex>
+			<Vertex p_x="933" p_y="1865"></Vertex>
+			<Vertex p_x="917" p_y="1865"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1212" p_y="1452"></Vertex>
+			<Vertex p_x="1390" p_y="1452"></Vertex>
+			<Vertex p_x="1390" p_y="1684"></Vertex>
+			<Vertex p_x="1212" p_y="1684"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1212" p_y="1685"></Vertex>
+			<Vertex p_x="1281" p_y="1685"></Vertex>
+			<Vertex p_x="1281" p_y="1709"></Vertex>
+			<Vertex p_x="1212" p_y="1709"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="934" p_y="1671"></Vertex>
+			<Vertex p_x="990" p_y="1671"></Vertex>
+			<Vertex p_x="990" p_y="1865"></Vertex>
+			<Vertex p_x="934" p_y="1865"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="991" p_y="1679"></Vertex>
+			<Vertex p_x="1015" p_y="1679"></Vertex>
+			<Vertex p_x="1015" p_y="1865"></Vertex>
+			<Vertex p_x="991" p_y="1865"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="0" p_y="904"></Vertex>
+			<Vertex p_x="634" p_y="904"></Vertex>
+			<Vertex p_x="634" p_y="1865"></Vertex>
+			<Vertex p_x="0" p_y="1865"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="635" p_y="1678"></Vertex>
+			<Vertex p_x="649" p_y="1678"></Vertex>
+			<Vertex p_x="649" p_y="1865"></Vertex>
+			<Vertex p_x="635" p_y="1865"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1000" p_y="1630"></Vertex>
+			<Vertex p_x="1000" p_y="1630"></Vertex>
+			<Vertex p_x="1000" p_y="1665"></Vertex>
+			<Vertex p_x="1000" p_y="1665"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1001" p_y="1563"></Vertex>
+			<Vertex p_x="1095" p_y="1563"></Vertex>
+			<Vertex p_x="1095" p_y="1655"></Vertex>
+			<Vertex p_x="1001" p_y="1655"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1001" p_y="1656"></Vertex>
+			<Vertex p_x="1065" p_y="1656"></Vertex>
+			<Vertex p_x="1065" p_y="1665"></Vertex>
+			<Vertex p_x="1001" p_y="1665"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1001" p_y="1551"></Vertex>
+			<Vertex p_x="1065" p_y="1551"></Vertex>
+			<Vertex p_x="1065" p_y="1562"></Vertex>
+			<Vertex p_x="1001" p_y="1562"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="635" p_y="1549"></Vertex>
+			<Vertex p_x="658" p_y="1549"></Vertex>
+			<Vertex p_x="658" p_y="1585"></Vertex>
+			<Vertex p_x="635" p_y="1585"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="731" p_y="1510"></Vertex>
+			<Vertex p_x="746" p_y="1510"></Vertex>
+			<Vertex p_x="746" p_y="1537"></Vertex>
+			<Vertex p_x="731" p_y="1537"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="735" p_y="1538"></Vertex>
+			<Vertex p_x="746" p_y="1538"></Vertex>
+			<Vertex p_x="746" p_y="1551"></Vertex>
+			<Vertex p_x="735" p_y="1551"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1027" p_y="1516"></Vertex>
+			<Vertex p_x="1053" p_y="1516"></Vertex>
+			<Vertex p_x="1053" p_y="1550"></Vertex>
+			<Vertex p_x="1027" p_y="1550"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1054" p_y="1537"></Vertex>
+			<Vertex p_x="1065" p_y="1537"></Vertex>
+			<Vertex p_x="1065" p_y="1550"></Vertex>
+			<Vertex p_x="1054" p_y="1550"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="635" p_y="1526"></Vertex>
+			<Vertex p_x="695" p_y="1526"></Vertex>
+			<Vertex p_x="695" p_y="1548"></Vertex>
+			<Vertex p_x="635" p_y="1548"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1063" p_y="1463"></Vertex>
+			<Vertex p_x="1122" p_y="1463"></Vertex>
+			<Vertex p_x="1122" p_y="1517"></Vertex>
+			<Vertex p_x="1063" p_y="1517"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1080" p_y="1518"></Vertex>
+			<Vertex p_x="1122" p_y="1518"></Vertex>
+			<Vertex p_x="1122" p_y="1531"></Vertex>
+			<Vertex p_x="1080" p_y="1531"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1080" p_y="1442"></Vertex>
+			<Vertex p_x="1122" p_y="1442"></Vertex>
+			<Vertex p_x="1122" p_y="1462"></Vertex>
+			<Vertex p_x="1080" p_y="1462"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="740" p_y="1489"></Vertex>
+			<Vertex p_x="757" p_y="1489"></Vertex>
+			<Vertex p_x="757" p_y="1509"></Vertex>
+			<Vertex p_x="740" p_y="1509"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="747" p_y="1510"></Vertex>
+			<Vertex p_x="757" p_y="1510"></Vertex>
+			<Vertex p_x="757" p_y="1515"></Vertex>
+			<Vertex p_x="747" p_y="1515"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="752" p_y="1476"></Vertex>
+			<Vertex p_x="770" p_y="1476"></Vertex>
+			<Vertex p_x="770" p_y="1488"></Vertex>
+			<Vertex p_x="752" p_y="1488"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="758" p_y="1489"></Vertex>
+			<Vertex p_x="770" p_y="1489"></Vertex>
+			<Vertex p_x="770" p_y="1495"></Vertex>
+			<Vertex p_x="758" p_y="1495"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="635" p_y="1452"></Vertex>
+			<Vertex p_x="711" p_y="1452"></Vertex>
+			<Vertex p_x="711" p_y="1525"></Vertex>
+			<Vertex p_x="635" p_y="1525"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="772" p_y="1424"></Vertex>
+			<Vertex p_x="791" p_y="1424"></Vertex>
+			<Vertex p_x="791" p_y="1444"></Vertex>
+			<Vertex p_x="772" p_y="1444"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="781" p_y="1445"></Vertex>
+			<Vertex p_x="791" p_y="1445"></Vertex>
+			<Vertex p_x="791" p_y="1452"></Vertex>
+			<Vertex p_x="781" p_y="1452"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="635" p_y="1408"></Vertex>
+			<Vertex p_x="739" p_y="1408"></Vertex>
+			<Vertex p_x="739" p_y="1451"></Vertex>
+			<Vertex p_x="635" p_y="1451"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1361" p_y="1275"></Vertex>
+			<Vertex p_x="1381" p_y="1275"></Vertex>
+			<Vertex p_x="1381" p_y="1305"></Vertex>
+			<Vertex p_x="1361" p_y="1305"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1361" p_y="1306"></Vertex>
+			<Vertex p_x="1374" p_y="1306"></Vertex>
+			<Vertex p_x="1374" p_y="1321"></Vertex>
+			<Vertex p_x="1361" p_y="1321"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="849" p_y="1147"></Vertex>
+			<Vertex p_x="880" p_y="1147"></Vertex>
+			<Vertex p_x="880" p_y="1216"></Vertex>
+			<Vertex p_x="849" p_y="1216"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="849" p_y="1217"></Vertex>
+			<Vertex p_x="860" p_y="1217"></Vertex>
+			<Vertex p_x="860" p_y="1242"></Vertex>
+			<Vertex p_x="849" p_y="1242"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1190" p_y="1059"></Vertex>
+			<Vertex p_x="1357" p_y="1059"></Vertex>
+			<Vertex p_x="1357" p_y="1213"></Vertex>
+			<Vertex p_x="1190" p_y="1213"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1190" p_y="1214"></Vertex>
+			<Vertex p_x="1301" p_y="1214"></Vertex>
+			<Vertex p_x="1301" p_y="1248"></Vertex>
+			<Vertex p_x="1190" p_y="1248"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="881" p_y="1156"></Vertex>
+			<Vertex p_x="910" p_y="1156"></Vertex>
+			<Vertex p_x="910" p_y="1175"></Vertex>
+			<Vertex p_x="881" p_y="1175"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="867" p_y="1057"></Vertex>
+			<Vertex p_x="928" p_y="1057"></Vertex>
+			<Vertex p_x="928" p_y="1146"></Vertex>
+			<Vertex p_x="867" p_y="1146"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="881" p_y="1147"></Vertex>
+			<Vertex p_x="928" p_y="1147"></Vertex>
+			<Vertex p_x="928" p_y="1155"></Vertex>
+			<Vertex p_x="881" p_y="1155"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1358" p_y="1033"></Vertex>
+			<Vertex p_x="1438" p_y="1033"></Vertex>
+			<Vertex p_x="1438" p_y="1139"></Vertex>
+			<Vertex p_x="1358" p_y="1139"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1358" p_y="1140"></Vertex>
+			<Vertex p_x="1392" p_y="1140"></Vertex>
+			<Vertex p_x="1392" p_y="1191"></Vertex>
+			<Vertex p_x="1358" p_y="1191"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="294" p_y="875"></Vertex>
+			<Vertex p_x="338" p_y="875"></Vertex>
+			<Vertex p_x="338" p_y="903"></Vertex>
+			<Vertex p_x="294" p_y="903"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="245" p_y="828"></Vertex>
+			<Vertex p_x="293" p_y="828"></Vertex>
+			<Vertex p_x="293" p_y="903"></Vertex>
+			<Vertex p_x="245" p_y="903"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="190" p_y="781"></Vertex>
+			<Vertex p_x="244" p_y="781"></Vertex>
+			<Vertex p_x="244" p_y="903"></Vertex>
+			<Vertex p_x="190" p_y="903"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1411" p_y="781"></Vertex>
+			<Vertex p_x="1438" p_y="781"></Vertex>
+			<Vertex p_x="1438" p_y="917"></Vertex>
+			<Vertex p_x="1411" p_y="917"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="429" p_y="773"></Vertex>
+			<Vertex p_x="464" p_y="773"></Vertex>
+			<Vertex p_x="464" p_y="903"></Vertex>
+			<Vertex p_x="429" p_y="903"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="134" p_y="730"></Vertex>
+			<Vertex p_x="189" p_y="730"></Vertex>
+			<Vertex p_x="189" p_y="903"></Vertex>
+			<Vertex p_x="134" p_y="903"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1217" p_y="0"></Vertex>
+			<Vertex p_x="1438" p_y="0"></Vertex>
+			<Vertex p_x="1438" p_y="709"></Vertex>
+			<Vertex p_x="1217" p_y="709"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1269" p_y="710"></Vertex>
+			<Vertex p_x="1438" p_y="710"></Vertex>
+			<Vertex p_x="1438" p_y="780"></Vertex>
+			<Vertex p_x="1269" p_y="780"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1013" p_y="237"></Vertex>
+			<Vertex p_x="1216" p_y="237"></Vertex>
+			<Vertex p_x="1216" p_y="605"></Vertex>
+			<Vertex p_x="1013" p_y="605"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1120" p_y="606"></Vertex>
+			<Vertex p_x="1216" p_y="606"></Vertex>
+			<Vertex p_x="1216" p_y="816"></Vertex>
+			<Vertex p_x="1120" p_y="816"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="134" p_y="513"></Vertex>
+			<Vertex p_x="173" p_y="513"></Vertex>
+			<Vertex p_x="173" p_y="599"></Vertex>
+			<Vertex p_x="134" p_y="599"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="134" p_y="600"></Vertex>
+			<Vertex p_x="148" p_y="600"></Vertex>
+			<Vertex p_x="148" p_y="655"></Vertex>
+			<Vertex p_x="134" p_y="655"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="849" p_y="596"></Vertex>
+			<Vertex p_x="851" p_y="596"></Vertex>
+			<Vertex p_x="851" p_y="605"></Vertex>
+			<Vertex p_x="849" p_y="605"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="846" p_y="571"></Vertex>
+			<Vertex p_x="870" p_y="571"></Vertex>
+			<Vertex p_x="870" p_y="590"></Vertex>
+			<Vertex p_x="846" p_y="590"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="849" p_y="591"></Vertex>
+			<Vertex p_x="870" p_y="591"></Vertex>
+			<Vertex p_x="870" p_y="595"></Vertex>
+			<Vertex p_x="849" p_y="595"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="942" p_y="465"></Vertex>
+			<Vertex p_x="971" p_y="465"></Vertex>
+			<Vertex p_x="971" p_y="480"></Vertex>
+			<Vertex p_x="942" p_y="480"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="942" p_y="481"></Vertex>
+			<Vertex p_x="961" p_y="481"></Vertex>
+			<Vertex p_x="961" p_y="487"></Vertex>
+			<Vertex p_x="942" p_y="487"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="924" p_y="342"></Vertex>
+			<Vertex p_x="947" p_y="342"></Vertex>
+			<Vertex p_x="947" p_y="464"></Vertex>
+			<Vertex p_x="924" p_y="464"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="924" p_y="465"></Vertex>
+			<Vertex p_x="941" p_y="465"></Vertex>
+			<Vertex p_x="941" p_y="473"></Vertex>
+			<Vertex p_x="924" p_y="473"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="612" p_y="430"></Vertex>
+			<Vertex p_x="634" p_y="430"></Vertex>
+			<Vertex p_x="634" p_y="903"></Vertex>
+			<Vertex p_x="612" p_y="903"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="465" p_y="389"></Vertex>
+			<Vertex p_x="580" p_y="389"></Vertex>
+			<Vertex p_x="580" p_y="903"></Vertex>
+			<Vertex p_x="465" p_y="903"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="581" p_y="402"></Vertex>
+			<Vertex p_x="611" p_y="402"></Vertex>
+			<Vertex p_x="611" p_y="903"></Vertex>
+			<Vertex p_x="581" p_y="903"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="463" p_y="343"></Vertex>
+			<Vertex p_x="503" p_y="343"></Vertex>
+			<Vertex p_x="503" p_y="380"></Vertex>
+			<Vertex p_x="463" p_y="380"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="465" p_y="381"></Vertex>
+			<Vertex p_x="503" p_y="381"></Vertex>
+			<Vertex p_x="503" p_y="388"></Vertex>
+			<Vertex p_x="465" p_y="388"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="99" p_y="307"></Vertex>
+			<Vertex p_x="133" p_y="307"></Vertex>
+			<Vertex p_x="133" p_y="903"></Vertex>
+			<Vertex p_x="99" p_y="903"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="80" p_y="156"></Vertex>
+			<Vertex p_x="98" p_y="156"></Vertex>
+			<Vertex p_x="98" p_y="903"></Vertex>
+			<Vertex p_x="80" p_y="903"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="0" p_y="81"></Vertex>
+			<Vertex p_x="57" p_y="81"></Vertex>
+			<Vertex p_x="57" p_y="903"></Vertex>
+			<Vertex p_x="0" p_y="903"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="58" p_y="120"></Vertex>
+			<Vertex p_x="79" p_y="120"></Vertex>
+			<Vertex p_x="79" p_y="903"></Vertex>
+			<Vertex p_x="58" p_y="903"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1026" p_y="70"></Vertex>
+			<Vertex p_x="1139" p_y="70"></Vertex>
+			<Vertex p_x="1139" p_y="111"></Vertex>
+			<Vertex p_x="1026" p_y="111"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1086" p_y="112"></Vertex>
+			<Vertex p_x="1139" p_y="112"></Vertex>
+			<Vertex p_x="1139" p_y="138"></Vertex>
+			<Vertex p_x="1086" p_y="138"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="1202" p_y="40"></Vertex>
+			<Vertex p_x="1216" p_y="40"></Vertex>
+			<Vertex p_x="1216" p_y="61"></Vertex>
+			<Vertex p_x="1202" p_y="61"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="635" p_y="1197"></Vertex>
+			<Vertex p_x="750" p_y="1197"></Vertex>
+			<Vertex p_x="750" p_y="1407"></Vertex>
+			<Vertex p_x="635" p_y="1407"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="751" p_y="1234"></Vertex>
+			<Vertex p_x="761" p_y="1234"></Vertex>
+			<Vertex p_x="761" p_y="1407"></Vertex>
+			<Vertex p_x="751" p_y="1407"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="893" p_y="0"></Vertex>
+			<Vertex p_x="1216" p_y="0"></Vertex>
+			<Vertex p_x="1216" p_y="39"></Vertex>
+			<Vertex p_x="893" p_y="39"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="893" p_y="40"></Vertex>
+			<Vertex p_x="1071" p_y="40"></Vertex>
+			<Vertex p_x="1071" p_y="57"></Vertex>
+			<Vertex p_x="893" p_y="57"></Vertex>
+		</Obstacle>
+	</ObstacleSet>
+</Experiment>

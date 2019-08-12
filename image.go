@@ -29,7 +29,7 @@ func ReadColorDictionary(scenarioParams *Params) (map[RGB][]Tuple, error) {
 		for x:=0; x<imgData.Bounds().Max.X; x++ {
 			r, g, b, _ := imgData.At(x, y).RGBA()
 			rgb := RGB{int((r >> 8) & r), int((g >> 8) & g), int((b >> 8) & b)}
-			colorDictionary[rgb] = append(colorDictionary[rgb], Tuple{x, scenarioParams.Height - y})
+			colorDictionary[rgb] = append(colorDictionary[rgb], Tuple{x, y})
 		}
 	}
 
@@ -303,6 +303,7 @@ func GenerateRouting(p *Params, r *RegionParams) {
 		}
 
 		if !rebuilt {
+			Rebuild(r.SquareList, r)
 			break
 		}
 	}

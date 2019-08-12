@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"math"
 	"os"
 )
 
@@ -56,6 +57,7 @@ func graphSquares(squares []RoutingSquare, vertices Vertices, edges Edges) {
 			}
 		}
 
+
 		// Add routers
 		for i := range s.Routers {
 			router := s.Routers[i]
@@ -63,6 +65,7 @@ func graphSquares(squares []RoutingSquare, vertices Vertices, edges Edges) {
 				vertices[router] = len(vertices)
 			}
 		}
+
 
 		// Add edges to the corners
 		for i := range corners {
@@ -169,7 +172,7 @@ func WriteRoadMapTXT(params *Params, vertices Vertices, edges Edges, file string
 		}
 
 		location := vertexIDMap[vid]
-		_, err = w.WriteString(fmt.Sprintf("%d %d %d\n", degree, location.X, params.Height - location.Y))
+		_, err = w.WriteString(fmt.Sprintf("%d %d %d\n", degree, location.X, int(math.Max(0, float64(params.Height - location.Y - 1)))))
 		if err != nil {
 			return err
 		}

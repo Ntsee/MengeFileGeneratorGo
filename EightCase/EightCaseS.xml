@@ -77,10 +77,10 @@
 	</AgentGroup>
 	<ObstacleSet type="explicit" class="1">
 		<Obstacle closed="1">
-			<Vertex p_x="0" p_y="28"></Vertex>
+			<Vertex p_x="-1" p_y="28"></Vertex>
 			<Vertex p_x="66" p_y="28"></Vertex>
-			<Vertex p_x="66" p_y="0"></Vertex>
-			<Vertex p_x="0" p_y="0"></Vertex>
+			<Vertex p_x="66" p_y="-1"></Vertex>
+			<Vertex p_x="-1" p_y="-1"></Vertex>
 		</Obstacle>
 		<Obstacle closed="1">
 			<Vertex p_x="0" p_y="20"></Vertex>

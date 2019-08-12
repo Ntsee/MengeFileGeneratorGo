@@ -1,99 +1,51 @@
 <BFSM>
 	<GoalSet id="0">
-		<Goal id="0" type="circle" capacity="1" weight="1" radius="0.5" x="58" y="8"></Goal>
-		<Goal id="1" type="circle" capacity="1" weight="1" radius="0.5" x="65" y="8"></Goal>
-		<Goal id="2" type="circle" capacity="1" weight="1" radius="0.5" x="58" y="15"></Goal>
-		<Goal id="3" type="circle" capacity="1" weight="1" radius="0.5" x="65" y="15"></Goal>
+		<Goal id="0" type="circle" capacity="1" weight="1" radius="0.5" x="58" y="19"></Goal>
+		<Goal id="1" type="circle" capacity="1" weight="1" radius="0.5" x="65" y="19"></Goal>
+		<Goal id="2" type="circle" capacity="1" weight="1" radius="0.5" x="58" y="12"></Goal>
+		<Goal id="3" type="circle" capacity="1" weight="1" radius="0.5" x="65" y="12"></Goal>
 	</GoalSet>
 	<GoalSet id="1">
-		<Goal id="0" type="circle" capacity="1" weight="1" radius="0.5" x="53" y="0"></Goal>
-		<Goal id="1" type="circle" capacity="1" weight="1" radius="0.5" x="60" y="0"></Goal>
-		<Goal id="2" type="circle" capacity="1" weight="1" radius="0.5" x="53" y="7"></Goal>
-		<Goal id="3" type="circle" capacity="1" weight="1" radius="0.5" x="60" y="7"></Goal>
+		<Goal id="0" type="circle" capacity="1" weight="1" radius="0.5" x="49" y="18"></Goal>
+		<Goal id="1" type="circle" capacity="1" weight="1" radius="0.5" x="56" y="18"></Goal>
+		<Goal id="2" type="circle" capacity="1" weight="1" radius="0.5" x="49" y="11"></Goal>
+		<Goal id="3" type="circle" capacity="1" weight="1" radius="0.5" x="56" y="11"></Goal>
 	</GoalSet>
 	<GoalSet id="2">
-		<Goal id="0" type="circle" capacity="1" weight="1" radius="0.5" x="49" y="9"></Goal>
-		<Goal id="1" type="circle" capacity="1" weight="1" radius="0.5" x="56" y="9"></Goal>
-		<Goal id="2" type="circle" capacity="1" weight="1" radius="0.5" x="49" y="16"></Goal>
-		<Goal id="3" type="circle" capacity="1" weight="1" radius="0.5" x="56" y="16"></Goal>
+		<Goal id="0" type="circle" capacity="1" weight="1" radius="0.5" x="0" y="19"></Goal>
+		<Goal id="1" type="circle" capacity="1" weight="1" radius="0.5" x="7" y="19"></Goal>
+		<Goal id="2" type="circle" capacity="1" weight="1" radius="0.5" x="0" y="12"></Goal>
+		<Goal id="3" type="circle" capacity="1" weight="1" radius="0.5" x="7" y="12"></Goal>
 	</GoalSet>
 	<GoalSet id="3">
-		<Goal id="0" type="circle" capacity="1" weight="1" radius="0.5" x="41" y="4"></Goal>
-		<Goal id="1" type="circle" capacity="1" weight="1" radius="0.5" x="48" y="4"></Goal>
-		<Goal id="2" type="circle" capacity="1" weight="1" radius="0.5" x="41" y="11"></Goal>
-		<Goal id="3" type="circle" capacity="1" weight="1" radius="0.5" x="48" y="11"></Goal>
+		<Goal id="0" type="circle" capacity="1" weight="1" radius="0.5" x="9" y="18"></Goal>
+		<Goal id="1" type="circle" capacity="1" weight="1" radius="0.5" x="16" y="18"></Goal>
+		<Goal id="2" type="circle" capacity="1" weight="1" radius="0.5" x="9" y="11"></Goal>
+		<Goal id="3" type="circle" capacity="1" weight="1" radius="0.5" x="16" y="11"></Goal>
 	</GoalSet>
 	<GoalSet id="4">
-		<Goal id="0" type="circle" capacity="1" weight="1" radius="0.5" x="0" y="8"></Goal>
-		<Goal id="1" type="circle" capacity="1" weight="1" radius="0.5" x="7" y="8"></Goal>
-		<Goal id="2" type="circle" capacity="1" weight="1" radius="0.5" x="0" y="15"></Goal>
-		<Goal id="3" type="circle" capacity="1" weight="1" radius="0.5" x="7" y="15"></Goal>
+		<Goal id="0" type="circle" capacity="1" weight="1" radius="0.5" x="26" y="12"></Goal>
+		<Goal id="1" type="circle" capacity="1" weight="1" radius="0.5" x="29" y="12"></Goal>
+		<Goal id="2" type="circle" capacity="1" weight="1" radius="0.5" x="26" y="9"></Goal>
+		<Goal id="3" type="circle" capacity="1" weight="1" radius="0.5" x="29" y="9"></Goal>
 	</GoalSet>
 	<GoalSet id="5">
-		<Goal id="0" type="circle" capacity="1" weight="1" radius="0.5" x="5" y="0"></Goal>
-		<Goal id="1" type="circle" capacity="1" weight="1" radius="0.5" x="12" y="0"></Goal>
-		<Goal id="2" type="circle" capacity="1" weight="1" radius="0.5" x="5" y="7"></Goal>
-		<Goal id="3" type="circle" capacity="1" weight="1" radius="0.5" x="12" y="7"></Goal>
+		<Goal id="0" type="circle" capacity="1" weight="1" radius="0.5" x="36" y="12"></Goal>
+		<Goal id="1" type="circle" capacity="1" weight="1" radius="0.5" x="39" y="12"></Goal>
+		<Goal id="2" type="circle" capacity="1" weight="1" radius="0.5" x="36" y="9"></Goal>
+		<Goal id="3" type="circle" capacity="1" weight="1" radius="0.5" x="39" y="9"></Goal>
 	</GoalSet>
 	<GoalSet id="6">
-		<Goal id="0" type="circle" capacity="1" weight="1" radius="0.5" x="9" y="9"></Goal>
-		<Goal id="1" type="circle" capacity="1" weight="1" radius="0.5" x="16" y="9"></Goal>
-		<Goal id="2" type="circle" capacity="1" weight="1" radius="0.5" x="9" y="16"></Goal>
-		<Goal id="3" type="circle" capacity="1" weight="1" radius="0.5" x="16" y="16"></Goal>
-	</GoalSet>
-	<GoalSet id="7">
-		<Goal id="0" type="circle" capacity="1" weight="1" radius="0.5" x="17" y="4"></Goal>
-		<Goal id="1" type="circle" capacity="1" weight="1" radius="0.5" x="24" y="4"></Goal>
-		<Goal id="2" type="circle" capacity="1" weight="1" radius="0.5" x="17" y="11"></Goal>
-		<Goal id="3" type="circle" capacity="1" weight="1" radius="0.5" x="24" y="11"></Goal>
-	</GoalSet>
-	<GoalSet id="8">
-		<Goal id="0" type="circle" capacity="1" weight="1" radius="0.5" x="26" y="15"></Goal>
-		<Goal id="1" type="circle" capacity="1" weight="1" radius="0.5" x="29" y="15"></Goal>
-		<Goal id="2" type="circle" capacity="1" weight="1" radius="0.5" x="26" y="18"></Goal>
-		<Goal id="3" type="circle" capacity="1" weight="1" radius="0.5" x="29" y="18"></Goal>
-	</GoalSet>
-	<GoalSet id="9">
-		<Goal id="0" type="circle" capacity="1" weight="1" radius="0.5" x="18" y="13"></Goal>
-		<Goal id="1" type="circle" capacity="1" weight="1" radius="0.5" x="25" y="13"></Goal>
-		<Goal id="2" type="circle" capacity="1" weight="1" radius="0.5" x="18" y="20"></Goal>
-		<Goal id="3" type="circle" capacity="1" weight="1" radius="0.5" x="25" y="20"></Goal>
-	</GoalSet>
-	<GoalSet id="10">
-		<Goal id="0" type="circle" capacity="1" weight="1" radius="0.5" x="36" y="15"></Goal>
-		<Goal id="1" type="circle" capacity="1" weight="1" radius="0.5" x="39" y="15"></Goal>
-		<Goal id="2" type="circle" capacity="1" weight="1" radius="0.5" x="36" y="18"></Goal>
-		<Goal id="3" type="circle" capacity="1" weight="1" radius="0.5" x="39" y="18"></Goal>
-	</GoalSet>
-	<GoalSet id="11">
-		<Goal id="0" type="circle" capacity="1" weight="1" radius="0.5" x="40" y="13"></Goal>
-		<Goal id="1" type="circle" capacity="1" weight="1" radius="0.5" x="47" y="13"></Goal>
-		<Goal id="2" type="circle" capacity="1" weight="1" radius="0.5" x="40" y="20"></Goal>
-		<Goal id="3" type="circle" capacity="1" weight="1" radius="0.5" x="47" y="20"></Goal>
-	</GoalSet>
-	<GoalSet id="12">
-		<Goal id="0" type="circle" capacity="1" weight="1" radius="0.5" x="31" y="11"></Goal>
-		<Goal id="1" type="circle" capacity="1" weight="1" radius="0.5" x="34" y="11"></Goal>
-		<Goal id="2" type="circle" capacity="1" weight="1" radius="0.5" x="31" y="14"></Goal>
-		<Goal id="3" type="circle" capacity="1" weight="1" radius="0.5" x="34" y="14"></Goal>
-	</GoalSet>
-	<GoalSet id="13">
-		<Goal id="0" type="circle" capacity="1" weight="1" radius="0.5" x="29" y="3"></Goal>
-		<Goal id="1" type="circle" capacity="1" weight="1" radius="0.5" x="36" y="3"></Goal>
-		<Goal id="2" type="circle" capacity="1" weight="1" radius="0.5" x="29" y="10"></Goal>
-		<Goal id="3" type="circle" capacity="1" weight="1" radius="0.5" x="36" y="10"></Goal>
-	</GoalSet>
-	<GoalSet id="14">
 		<Goal id="0" type="circle" capacity="1" weight="1" radius="0.5" x="31" y="16"></Goal>
 		<Goal id="1" type="circle" capacity="1" weight="1" radius="0.5" x="34" y="16"></Goal>
-		<Goal id="2" type="circle" capacity="1" weight="1" radius="0.5" x="31" y="19"></Goal>
-		<Goal id="3" type="circle" capacity="1" weight="1" radius="0.5" x="34" y="19"></Goal>
+		<Goal id="2" type="circle" capacity="1" weight="1" radius="0.5" x="31" y="13"></Goal>
+		<Goal id="3" type="circle" capacity="1" weight="1" radius="0.5" x="34" y="13"></Goal>
 	</GoalSet>
-	<GoalSet id="15">
-		<Goal id="0" type="circle" capacity="1" weight="1" radius="0.5" x="29" y="20"></Goal>
-		<Goal id="1" type="circle" capacity="1" weight="1" radius="0.5" x="36" y="20"></Goal>
-		<Goal id="2" type="circle" capacity="1" weight="1" radius="0.5" x="29" y="27"></Goal>
-		<Goal id="3" type="circle" capacity="1" weight="1" radius="0.5" x="36" y="27"></Goal>
+	<GoalSet id="7">
+		<Goal id="0" type="circle" capacity="1" weight="1" radius="0.5" x="31" y="11"></Goal>
+		<Goal id="1" type="circle" capacity="1" weight="1" radius="0.5" x="34" y="11"></Goal>
+		<Goal id="2" type="circle" capacity="1" weight="1" radius="0.5" x="31" y="8"></Goal>
+		<Goal id="3" type="circle" capacity="1" weight="1" radius="0.5" x="34" y="8"></Goal>
 	</GoalSet>
 	<State name="Start_0" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
@@ -106,22 +58,22 @@
 	<State name="Spawn_0_0" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="53" y_value="0" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="53" y_value="27" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Spawn_0_1" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="60" y_value="0" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="60" y_value="27" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Spawn_0_2" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="53" y_value="6" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="53" y_value="20" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Spawn_0_3" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="60" y_value="6" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="60" y_value="20" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Travel_0_0" weight="0" final="0">
 		<GoalSelector persistent="1" type="random" goal_set="0"></GoalSelector>
@@ -132,18 +84,6 @@
 		<VelComponent type="goal"></VelComponent>
 	</State>
 	<State name="Wait_0_0" weight="0" final="0">
-		<GoalSelector type="identity" goal_set="0"></GoalSelector>
-		<VelComponent type="goal"></VelComponent>
-	</State>
-	<State name="Travel_0_1" weight="0" final="0">
-		<GoalSelector persistent="1" type="random" goal_set="1"></GoalSelector>
-		<VelComponent type="road_map" file_name="EightCase.txt"></VelComponent>
-	</State>
-	<State name="Arrive_0_1" weight="0" final="0">
-		<GoalSelector type="identity" goal_set="0"></GoalSelector>
-		<VelComponent type="goal"></VelComponent>
-	</State>
-	<State name="Wait_0_1" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="goal"></VelComponent>
 	</State>
@@ -158,25 +98,25 @@
 	<State name="Spawn_1_0" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="41" y_value="3" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="41" y_value="23" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Spawn_1_1" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="48" y_value="3" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="48" y_value="23" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Spawn_1_2" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="41" y_value="10" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="41" y_value="16" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Spawn_1_3" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="48" y_value="10" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="48" y_value="16" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Travel_1_0" weight="0" final="0">
-		<GoalSelector persistent="1" type="random" goal_set="2"></GoalSelector>
+		<GoalSelector persistent="1" type="random" goal_set="1"></GoalSelector>
 		<VelComponent type="road_map" file_name="EightCase.txt"></VelComponent>
 	</State>
 	<State name="Arrive_1_0" weight="0" final="0">
@@ -184,18 +124,6 @@
 		<VelComponent type="goal"></VelComponent>
 	</State>
 	<State name="Wait_1_0" weight="0" final="0">
-		<GoalSelector type="identity" goal_set="0"></GoalSelector>
-		<VelComponent type="goal"></VelComponent>
-	</State>
-	<State name="Travel_1_1" weight="0" final="0">
-		<GoalSelector persistent="1" type="random" goal_set="3"></GoalSelector>
-		<VelComponent type="road_map" file_name="EightCase.txt"></VelComponent>
-	</State>
-	<State name="Arrive_1_1" weight="0" final="0">
-		<GoalSelector type="identity" goal_set="0"></GoalSelector>
-		<VelComponent type="goal"></VelComponent>
-	</State>
-	<State name="Wait_1_1" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="goal"></VelComponent>
 	</State>
@@ -210,25 +138,25 @@
 	<State name="Spawn_2_0" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="5" y_value="0" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="5" y_value="27" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Spawn_2_1" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="12" y_value="0" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="12" y_value="27" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Spawn_2_2" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="5" y_value="6" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="5" y_value="20" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Spawn_2_3" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="12" y_value="6" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="12" y_value="20" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Travel_2_0" weight="0" final="0">
-		<GoalSelector persistent="1" type="random" goal_set="4"></GoalSelector>
+		<GoalSelector persistent="1" type="random" goal_set="2"></GoalSelector>
 		<VelComponent type="road_map" file_name="EightCase.txt"></VelComponent>
 	</State>
 	<State name="Arrive_2_0" weight="0" final="0">
@@ -236,18 +164,6 @@
 		<VelComponent type="goal"></VelComponent>
 	</State>
 	<State name="Wait_2_0" weight="0" final="0">
-		<GoalSelector type="identity" goal_set="0"></GoalSelector>
-		<VelComponent type="goal"></VelComponent>
-	</State>
-	<State name="Travel_2_1" weight="0" final="0">
-		<GoalSelector persistent="1" type="random" goal_set="5"></GoalSelector>
-		<VelComponent type="road_map" file_name="EightCase.txt"></VelComponent>
-	</State>
-	<State name="Arrive_2_1" weight="0" final="0">
-		<GoalSelector type="identity" goal_set="0"></GoalSelector>
-		<VelComponent type="goal"></VelComponent>
-	</State>
-	<State name="Wait_2_1" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="goal"></VelComponent>
 	</State>
@@ -262,25 +178,25 @@
 	<State name="Spawn_3_0" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="17" y_value="3" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="17" y_value="23" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Spawn_3_1" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="24" y_value="3" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="24" y_value="23" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Spawn_3_2" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="17" y_value="10" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="17" y_value="16" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Spawn_3_3" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="24" y_value="10" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="24" y_value="16" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Travel_3_0" weight="0" final="0">
-		<GoalSelector persistent="1" type="random" goal_set="6"></GoalSelector>
+		<GoalSelector persistent="1" type="random" goal_set="3"></GoalSelector>
 		<VelComponent type="road_map" file_name="EightCase.txt"></VelComponent>
 	</State>
 	<State name="Arrive_3_0" weight="0" final="0">
@@ -288,18 +204,6 @@
 		<VelComponent type="goal"></VelComponent>
 	</State>
 	<State name="Wait_3_0" weight="0" final="0">
-		<GoalSelector type="identity" goal_set="0"></GoalSelector>
-		<VelComponent type="goal"></VelComponent>
-	</State>
-	<State name="Travel_3_1" weight="0" final="0">
-		<GoalSelector persistent="1" type="random" goal_set="7"></GoalSelector>
-		<VelComponent type="road_map" file_name="EightCase.txt"></VelComponent>
-	</State>
-	<State name="Arrive_3_1" weight="0" final="0">
-		<GoalSelector type="identity" goal_set="0"></GoalSelector>
-		<VelComponent type="goal"></VelComponent>
-	</State>
-	<State name="Wait_3_1" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="goal"></VelComponent>
 	</State>
@@ -314,25 +218,25 @@
 	<State name="Spawn_4_0" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="18" y_value="12" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="18" y_value="14" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Spawn_4_1" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="25" y_value="12" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="25" y_value="14" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Spawn_4_2" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="18" y_value="19" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="18" y_value="7" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Spawn_4_3" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="25" y_value="19" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="25" y_value="7" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Travel_4_0" weight="0" final="0">
-		<GoalSelector persistent="1" type="random" goal_set="8"></GoalSelector>
+		<GoalSelector persistent="1" type="random" goal_set="4"></GoalSelector>
 		<VelComponent type="road_map" file_name="EightCase.txt"></VelComponent>
 	</State>
 	<State name="Arrive_4_0" weight="0" final="0">
@@ -340,18 +244,6 @@
 		<VelComponent type="goal"></VelComponent>
 	</State>
 	<State name="Wait_4_0" weight="0" final="0">
-		<GoalSelector type="identity" goal_set="0"></GoalSelector>
-		<VelComponent type="goal"></VelComponent>
-	</State>
-	<State name="Travel_4_1" weight="0" final="0">
-		<GoalSelector persistent="1" type="random" goal_set="9"></GoalSelector>
-		<VelComponent type="road_map" file_name="EightCase.txt"></VelComponent>
-	</State>
-	<State name="Arrive_4_1" weight="0" final="0">
-		<GoalSelector type="identity" goal_set="0"></GoalSelector>
-		<VelComponent type="goal"></VelComponent>
-	</State>
-	<State name="Wait_4_1" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="goal"></VelComponent>
 	</State>
@@ -366,25 +258,25 @@
 	<State name="Spawn_5_0" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="40" y_value="12" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="40" y_value="14" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Spawn_5_1" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="47" y_value="12" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="47" y_value="14" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Spawn_5_2" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="40" y_value="19" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="40" y_value="7" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Spawn_5_3" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="47" y_value="19" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="47" y_value="7" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Travel_5_0" weight="0" final="0">
-		<GoalSelector persistent="1" type="random" goal_set="10"></GoalSelector>
+		<GoalSelector persistent="1" type="random" goal_set="5"></GoalSelector>
 		<VelComponent type="road_map" file_name="EightCase.txt"></VelComponent>
 	</State>
 	<State name="Arrive_5_0" weight="0" final="0">
@@ -392,18 +284,6 @@
 		<VelComponent type="goal"></VelComponent>
 	</State>
 	<State name="Wait_5_0" weight="0" final="0">
-		<GoalSelector type="identity" goal_set="0"></GoalSelector>
-		<VelComponent type="goal"></VelComponent>
-	</State>
-	<State name="Travel_5_1" weight="0" final="0">
-		<GoalSelector persistent="1" type="random" goal_set="11"></GoalSelector>
-		<VelComponent type="road_map" file_name="EightCase.txt"></VelComponent>
-	</State>
-	<State name="Arrive_5_1" weight="0" final="0">
-		<GoalSelector type="identity" goal_set="0"></GoalSelector>
-		<VelComponent type="goal"></VelComponent>
-	</State>
-	<State name="Wait_5_1" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="goal"></VelComponent>
 	</State>
@@ -418,25 +298,25 @@
 	<State name="Spawn_6_0" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="29" y_value="2" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="29" y_value="24" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Spawn_6_1" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="36" y_value="2" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="36" y_value="24" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Spawn_6_2" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="29" y_value="9" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="29" y_value="17" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Spawn_6_3" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="36" y_value="9" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="36" y_value="17" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Travel_6_0" weight="0" final="0">
-		<GoalSelector persistent="1" type="random" goal_set="12"></GoalSelector>
+		<GoalSelector persistent="1" type="random" goal_set="6"></GoalSelector>
 		<VelComponent type="road_map" file_name="EightCase.txt"></VelComponent>
 	</State>
 	<State name="Arrive_6_0" weight="0" final="0">
@@ -444,18 +324,6 @@
 		<VelComponent type="goal"></VelComponent>
 	</State>
 	<State name="Wait_6_0" weight="0" final="0">
-		<GoalSelector type="identity" goal_set="0"></GoalSelector>
-		<VelComponent type="goal"></VelComponent>
-	</State>
-	<State name="Travel_6_1" weight="0" final="0">
-		<GoalSelector persistent="1" type="random" goal_set="13"></GoalSelector>
-		<VelComponent type="road_map" file_name="EightCase.txt"></VelComponent>
-	</State>
-	<State name="Arrive_6_1" weight="0" final="0">
-		<GoalSelector type="identity" goal_set="0"></GoalSelector>
-		<VelComponent type="goal"></VelComponent>
-	</State>
-	<State name="Wait_6_1" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="goal"></VelComponent>
 	</State>
@@ -470,25 +338,25 @@
 	<State name="Spawn_7_0" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="29" y_value="19" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="29" y_value="7" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Spawn_7_1" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="36" y_value="19" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="36" y_value="7" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Spawn_7_2" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="29" y_value="26" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="29" y_value="0" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Spawn_7_3" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="zero"></VelComponent>
-		<Action type="teleport" x_value="36" y_value="26" exit_reset="true" dist="c"></Action>
+		<Action type="teleport" x_value="36" y_value="0" exit_reset="true" dist="c"></Action>
 	</State>
 	<State name="Travel_7_0" weight="0" final="0">
-		<GoalSelector persistent="1" type="random" goal_set="14"></GoalSelector>
+		<GoalSelector persistent="1" type="random" goal_set="7"></GoalSelector>
 		<VelComponent type="road_map" file_name="EightCase.txt"></VelComponent>
 	</State>
 	<State name="Arrive_7_0" weight="0" final="0">
@@ -496,18 +364,6 @@
 		<VelComponent type="goal"></VelComponent>
 	</State>
 	<State name="Wait_7_0" weight="0" final="0">
-		<GoalSelector type="identity" goal_set="0"></GoalSelector>
-		<VelComponent type="goal"></VelComponent>
-	</State>
-	<State name="Travel_7_1" weight="0" final="0">
-		<GoalSelector persistent="1" type="random" goal_set="15"></GoalSelector>
-		<VelComponent type="road_map" file_name="EightCase.txt"></VelComponent>
-	</State>
-	<State name="Arrive_7_1" weight="0" final="0">
-		<GoalSelector type="identity" goal_set="0"></GoalSelector>
-		<VelComponent type="goal"></VelComponent>
-	</State>
-	<State name="Wait_7_1" weight="0" final="0">
 		<GoalSelector type="identity" goal_set="0"></GoalSelector>
 		<VelComponent type="goal"></VelComponent>
 	</State>
@@ -541,18 +397,6 @@
 			<State name="Travel_0_0" weight="1" final="0"></State>
 		</Target>
 	</Transition>
-	<Transition from="Travel_0_1" to="Arrive_0_1">
-		<Condition type="goal_reached" distance="1" per_agent="0" min="0" max="0"></Condition>
-	</Transition>
-	<Transition from="Arrive_0_1" to="Wait_0_1">
-		<Condition type="timer" per_agent="1" dist="u" min="0" max="0"></Condition>
-	</Transition>
-	<Transition from="Wait_0_1">
-		<Condition type="auto" per_agent="0" min="0" max="0"></Condition>
-		<Target type="prob">
-			<State name="Travel_0_1" weight="1" final="0"></State>
-		</Target>
-	</Transition>
 	<Transition from="Start_1" to="Start_Wait_1">
 		<Condition type="timer" per_agent="1" dist="u" min="0" max="0"></Condition>
 	</Transition>
@@ -581,18 +425,6 @@
 		<Condition type="auto" per_agent="0" min="0" max="0"></Condition>
 		<Target type="prob">
 			<State name="Travel_1_0" weight="1" final="0"></State>
-		</Target>
-	</Transition>
-	<Transition from="Travel_1_1" to="Arrive_1_1">
-		<Condition type="goal_reached" distance="1" per_agent="0" min="0" max="0"></Condition>
-	</Transition>
-	<Transition from="Arrive_1_1" to="Wait_1_1">
-		<Condition type="timer" per_agent="1" dist="u" min="0" max="0"></Condition>
-	</Transition>
-	<Transition from="Wait_1_1">
-		<Condition type="auto" per_agent="0" min="0" max="0"></Condition>
-		<Target type="prob">
-			<State name="Travel_1_1" weight="1" final="0"></State>
 		</Target>
 	</Transition>
 	<Transition from="Start_2" to="Start_Wait_2">
@@ -625,18 +457,6 @@
 			<State name="Travel_2_0" weight="1" final="0"></State>
 		</Target>
 	</Transition>
-	<Transition from="Travel_2_1" to="Arrive_2_1">
-		<Condition type="goal_reached" distance="1" per_agent="0" min="0" max="0"></Condition>
-	</Transition>
-	<Transition from="Arrive_2_1" to="Wait_2_1">
-		<Condition type="timer" per_agent="1" dist="u" min="0" max="0"></Condition>
-	</Transition>
-	<Transition from="Wait_2_1">
-		<Condition type="auto" per_agent="0" min="0" max="0"></Condition>
-		<Target type="prob">
-			<State name="Travel_2_1" weight="1" final="0"></State>
-		</Target>
-	</Transition>
 	<Transition from="Start_3" to="Start_Wait_3">
 		<Condition type="timer" per_agent="1" dist="u" min="0" max="0"></Condition>
 	</Transition>
@@ -665,18 +485,6 @@
 		<Condition type="auto" per_agent="0" min="0" max="0"></Condition>
 		<Target type="prob">
 			<State name="Travel_3_0" weight="1" final="0"></State>
-		</Target>
-	</Transition>
-	<Transition from="Travel_3_1" to="Arrive_3_1">
-		<Condition type="goal_reached" distance="1" per_agent="0" min="0" max="0"></Condition>
-	</Transition>
-	<Transition from="Arrive_3_1" to="Wait_3_1">
-		<Condition type="timer" per_agent="1" dist="u" min="0" max="0"></Condition>
-	</Transition>
-	<Transition from="Wait_3_1">
-		<Condition type="auto" per_agent="0" min="0" max="0"></Condition>
-		<Target type="prob">
-			<State name="Travel_3_1" weight="1" final="0"></State>
 		</Target>
 	</Transition>
 	<Transition from="Start_4" to="Start_Wait_4">
@@ -709,18 +517,6 @@
 			<State name="Travel_4_0" weight="1" final="0"></State>
 		</Target>
 	</Transition>
-	<Transition from="Travel_4_1" to="Arrive_4_1">
-		<Condition type="goal_reached" distance="1" per_agent="0" min="0" max="0"></Condition>
-	</Transition>
-	<Transition from="Arrive_4_1" to="Wait_4_1">
-		<Condition type="timer" per_agent="1" dist="u" min="0" max="0"></Condition>
-	</Transition>
-	<Transition from="Wait_4_1">
-		<Condition type="auto" per_agent="0" min="0" max="0"></Condition>
-		<Target type="prob">
-			<State name="Travel_4_1" weight="1" final="0"></State>
-		</Target>
-	</Transition>
 	<Transition from="Start_5" to="Start_Wait_5">
 		<Condition type="timer" per_agent="1" dist="u" min="0" max="0"></Condition>
 	</Transition>
@@ -749,18 +545,6 @@
 		<Condition type="auto" per_agent="0" min="0" max="0"></Condition>
 		<Target type="prob">
 			<State name="Travel_5_0" weight="1" final="0"></State>
-		</Target>
-	</Transition>
-	<Transition from="Travel_5_1" to="Arrive_5_1">
-		<Condition type="goal_reached" distance="1" per_agent="0" min="0" max="0"></Condition>
-	</Transition>
-	<Transition from="Arrive_5_1" to="Wait_5_1">
-		<Condition type="timer" per_agent="1" dist="u" min="0" max="0"></Condition>
-	</Transition>
-	<Transition from="Wait_5_1">
-		<Condition type="auto" per_agent="0" min="0" max="0"></Condition>
-		<Target type="prob">
-			<State name="Travel_5_1" weight="1" final="0"></State>
 		</Target>
 	</Transition>
 	<Transition from="Start_6" to="Start_Wait_6">
@@ -793,18 +577,6 @@
 			<State name="Travel_6_0" weight="1" final="0"></State>
 		</Target>
 	</Transition>
-	<Transition from="Travel_6_1" to="Arrive_6_1">
-		<Condition type="goal_reached" distance="1" per_agent="0" min="0" max="0"></Condition>
-	</Transition>
-	<Transition from="Arrive_6_1" to="Wait_6_1">
-		<Condition type="timer" per_agent="1" dist="u" min="0" max="0"></Condition>
-	</Transition>
-	<Transition from="Wait_6_1">
-		<Condition type="auto" per_agent="0" min="0" max="0"></Condition>
-		<Target type="prob">
-			<State name="Travel_6_1" weight="1" final="0"></State>
-		</Target>
-	</Transition>
 	<Transition from="Start_7" to="Start_Wait_7">
 		<Condition type="timer" per_agent="1" dist="u" min="0" max="0"></Condition>
 	</Transition>
@@ -833,18 +605,6 @@
 		<Condition type="auto" per_agent="0" min="0" max="0"></Condition>
 		<Target type="prob">
 			<State name="Travel_7_0" weight="1" final="0"></State>
-		</Target>
-	</Transition>
-	<Transition from="Travel_7_1" to="Arrive_7_1">
-		<Condition type="goal_reached" distance="1" per_agent="0" min="0" max="0"></Condition>
-	</Transition>
-	<Transition from="Arrive_7_1" to="Wait_7_1">
-		<Condition type="timer" per_agent="1" dist="u" min="0" max="0"></Condition>
-	</Transition>
-	<Transition from="Wait_7_1">
-		<Condition type="auto" per_agent="0" min="0" max="0"></Condition>
-		<Target type="prob">
-			<State name="Travel_7_1" weight="1" final="0"></State>
 		</Target>
 	</Transition>
 </BFSM>

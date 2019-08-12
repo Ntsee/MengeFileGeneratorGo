@@ -37,10 +37,10 @@
 	</AgentGroup>
 	<ObstacleSet type="explicit" class="1">
 		<Obstacle closed="1">
-			<Vertex p_x="0" p_y="824"></Vertex>
+			<Vertex p_x="-1" p_y="824"></Vertex>
 			<Vertex p_x="616" p_y="824"></Vertex>
-			<Vertex p_x="616" p_y="0"></Vertex>
-			<Vertex p_x="0" p_y="0"></Vertex>
+			<Vertex p_x="616" p_y="-1"></Vertex>
+			<Vertex p_x="-1" p_y="-1"></Vertex>
 		</Obstacle>
 		<Obstacle closed="1">
 			<Vertex p_x="108" p_y="816"></Vertex>

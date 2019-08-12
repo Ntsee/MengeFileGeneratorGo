@@ -29,10 +29,10 @@
 	</AgentGroup>
 	<ObstacleSet type="explicit" class="1">
 		<Obstacle closed="1">
-			<Vertex p_x="0" p_y="300"></Vertex>
+			<Vertex p_x="-1" p_y="300"></Vertex>
 			<Vertex p_x="1600" p_y="300"></Vertex>
-			<Vertex p_x="1600" p_y="0"></Vertex>
-			<Vertex p_x="0" p_y="0"></Vertex>
+			<Vertex p_x="1600" p_y="-1"></Vertex>
+			<Vertex p_x="-1" p_y="-1"></Vertex>
 		</Obstacle>
 		<Obstacle closed="1">
 			<Vertex p_x="0" p_y="226"></Vertex>
@@ -137,12 +137,6 @@
 			<Vertex p_x="1097" p_y="143"></Vertex>
 		</Obstacle>
 		<Obstacle closed="1">
-			<Vertex p_x="250" p_y="77"></Vertex>
-			<Vertex p_x="297" p_y="77"></Vertex>
-			<Vertex p_x="297" p_y="135"></Vertex>
-			<Vertex p_x="250" p_y="135"></Vertex>
-		</Obstacle>
-		<Obstacle closed="1">
 			<Vertex p_x="3" p_y="0"></Vertex>
 			<Vertex p_x="148" p_y="0"></Vertex>
 			<Vertex p_x="148" p_y="134"></Vertex>
@@ -159,18 +153,6 @@
 			<Vertex p_x="1599" p_y="0"></Vertex>
 			<Vertex p_x="1599" p_y="127"></Vertex>
 			<Vertex p_x="1325" p_y="127"></Vertex>
-		</Obstacle>
-		<Obstacle closed="1">
-			<Vertex p_x="204" p_y="77"></Vertex>
-			<Vertex p_x="249" p_y="77"></Vertex>
-			<Vertex p_x="249" p_y="124"></Vertex>
-			<Vertex p_x="204" p_y="124"></Vertex>
-		</Obstacle>
-		<Obstacle closed="1">
-			<Vertex p_x="298" p_y="77"></Vertex>
-			<Vertex p_x="355" p_y="77"></Vertex>
-			<Vertex p_x="355" p_y="124"></Vertex>
-			<Vertex p_x="298" p_y="124"></Vertex>
 		</Obstacle>
 		<Obstacle closed="1">
 			<Vertex p_x="375" p_y="77"></Vertex>
@@ -195,6 +177,18 @@
 			<Vertex p_x="280" p_y="0"></Vertex>
 			<Vertex p_x="280" p_y="52"></Vertex>
 			<Vertex p_x="201" p_y="52"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="250" p_y="125"></Vertex>
+			<Vertex p_x="297" p_y="125"></Vertex>
+			<Vertex p_x="297" p_y="135"></Vertex>
+			<Vertex p_x="250" p_y="135"></Vertex>
+		</Obstacle>
+		<Obstacle closed="1">
+			<Vertex p_x="204" p_y="77"></Vertex>
+			<Vertex p_x="355" p_y="77"></Vertex>
+			<Vertex p_x="355" p_y="124"></Vertex>
+			<Vertex p_x="204" p_y="124"></Vertex>
 		</Obstacle>
 	</ObstacleSet>
 </Experiment>

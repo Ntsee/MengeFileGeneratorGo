@@ -228,10 +228,10 @@ func CreateSceneXML(params *Params, regionParams *RegionParams, scenarioXML Scen
 	border := Obstacle{
 		Closed: 1,
 		Vertices: []Vertex {
-			{X: 0, 				Y: params.Height},
+			{X: -1, 				Y: params.Height},
 			{X: params.Width,	Y: params.Height},
-			{X: params.Width,	Y: 0},
-			{X: 0,				Y: 0},
+			{X: params.Width,	Y: -1},
+			{X: -1,				Y: -1},
 		},
 	}
 	obstacleSet.Obstacles = append(obstacleSet.Obstacles, border)

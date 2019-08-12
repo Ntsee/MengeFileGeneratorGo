@@ -1,0 +1,51 @@
+<!-- Firefly Scenario XML -->
+<Data>	
+	<Group speed="1" amount="1000">
+
+			<!-- Entrance (Red) -->
+			<Spawn min="0" max="1000">
+				<Color r="255" g="0" b="0" />
+				<Transition to="0" chance="0.80" />
+				<Transition to="1" chance="0.10" />
+				<Transition to="2" chance="0.05" />
+				<Transition to="3" chance="0.05" />
+			</Spawn>
+
+			<!-- Stage (Yellow) (80%) -->
+			<GoalSet capacity="1000" min="2700" max="2700">
+				<Color r="255" g="255" b="0" />
+				<Transition to="0" chance="0.80" />
+				<Transition to="1" chance="0.10" />
+				<Transition to="2" chance="0.05" />
+				<Transition to="3" chance="0.05" />
+			</GoalSet>
+
+			<!-- Relaxation Area (Green) (10%) -->
+			<GoalSet capacity="1000" min="900" max="900">
+				<Color r="0" g="255" b="0" />
+				<Transition to="0" chance="0.80" />
+				<Transition to="1" chance="0.10" />
+				<Transition to="2" chance="0.05" />
+				<Transition to="3" chance="0.05" />
+			</GoalSet>
+
+			<!-- Food (5%) (Blue) -->
+			<GoalSet capacity="1000" min="1200" max="1200">
+				<Color r="0" g="0" b="255" />
+				<Transition to="0" chance="0.80" />
+				<Transition to="1" chance="0.10" />
+				<Transition to="2" chance="0.05" />
+				<Transition to="3" chance="0.05" />
+			</GoalSet>
+
+			<!-- Bathroom (5%) (Purple) -->
+			<GoalSet capacity="1000" min="180" max="180">
+				<Color r="255" g="0" b="255" />
+				<Transition to="0" chance="0.80" />
+				<Transition to="1" chance="0.10" />
+				<Transition to="2" chance="0.05" />
+				<Transition to="3" chance="0.05" />
+			</GoalSet>
+
+	</Group>
+</Data>
