@@ -323,7 +323,7 @@ func createTransitions(params *Params, behaviorXML *BehaviorXML, scenarioXML Sce
 					})
 				} else {
 					waitNextGoalTransition.Target.States = append(waitNextGoalTransition.Target.States, BState{
-						Name:	fmt.Sprintf("Travel_%d_%d", groupID, goalSetID),
+						Name:	fmt.Sprintf("Travel_%d_%d", groupID, transition.To),
 						Weight:	transition.Chance,
 					})
 				}
